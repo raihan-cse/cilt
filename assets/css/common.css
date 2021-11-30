@@ -1,0 +1,20 @@
+@charset "utf-8"; 
+
+/* ==external fonts links== */
+
+/* ==normalizing== */
+@import "normalize.css";
+
+/* ==common style== */
+
+/* ==custom container width== */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1220px;
+    }
+}
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1320px;
+    }
+}
