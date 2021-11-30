@@ -1,11 +1,31 @@
-@charset "utf-8"; 
-
-/* ==external fonts links== */
-
 /* ==normalizing== */
 @import "normalize.css";
 
 /* ==common style== */
+.h1, h1, .h2, h2, .h3, h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pt, .py {
+    padding-top: 8.9rem;
+}
+.pb, .py {
+    padding-bottom: 8.9rem;
+}
+
+.sc_tittle_wrapper {
+    text-align: center;
+}
+.sc_title {
+    font-size: 6.4rem;
+    line-height: 7.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--navy-blue);
+    display: inline-block;
+    border-bottom: 1px solid var(--light-gold);
+}
 
 /* ==custom container width== */
 @media (min-width: 1400px) {

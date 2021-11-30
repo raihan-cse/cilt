@@ -1,14 +1,18 @@
+@charset "utf-8"; 
+
+/* ==external fonts links== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 :root {
   --white: #ffffff;
-  --black: #151515;
-  --red: #ED1C24;
-  --blue: #224497;
-  --gray: #e3e3e3;
-  --dark-gray: #333333;
-  --light-gray: #ECECEC;
-  --gray-1: #6F6F6F;
-  --gray-4: #BDBDBD;
-  --green: #219653;
+  --off-white: #F0F0F0;
+  --black: #000000;
+  --light-black: #717171;
+  --off-black: #979797;
+  --navy-blue: #361063;
+  --light-gold: #BB9760;
+  --gray: #EBEBEB;
 }
 
 *, *::before, *::after {
@@ -31,7 +35,7 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--black);
