@@ -1,0 +1,23 @@
+.partners_slider {
+    padding: 2.2rem 2.4rem 0 2.4rem;
+}
+.partners_slider .logo_wrapper {
+    max-width: 172px;
+    width: 100%;
+    margin: 0 auto;
+}
+.partners_slider .owl-nav button.owl-next, .partners_slider .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    transform        : translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.partners_slider .owl-nav button.owl-next img, .partners_slider .owl-nav button.owl-prev img {
+    width: 10px;
+}
+.partners_slider .owl-nav button.owl-next {
+    right: 0;
+}
+.partners_slider .owl-nav button.owl-prev {
+    left: 0;
+}

@@ -1,4 +1,6 @@
 @import "common.css";
+@import "our-partners.css";
+@import "footer.css";
 .hero_banner .inner_content, .hero_banner .banner_thumb {
     position: relative;
     overflow: hidden;
@@ -35,7 +37,7 @@
 .hero_banner .hero_title span {
     color: var(--navy-blue);
 }
-.hero_banner .desc {
+.hero_banner p {
     font-size: 2.5rem;
     line-height: 2.9rem;
     font-weight: 500;
@@ -83,7 +85,7 @@
     color: inherit;
     margin-bottom: 2.6rem;
 }
-.srt_content_wrapper .desc {
+.srt_content_wrapper .description p {
     margin-bottom: 5.2rem;
     color: inherit;
 }
@@ -109,7 +111,7 @@
     margin-top: 2rem;
     margin-bottom: 2.8rem;
 }
-.forum_transport_content p.desc {
+.forum_transport_content .description p {
     line-height: 2.1rem;
     color: var(--off-black);
     margin-bottom: 5.2rem;
@@ -138,7 +140,80 @@
     line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.h_events_card_content {}
-.h_events_card_content {}
-.h_events_card_content {}
-.h_events_card_content {}
+.h_event .box_btn_wrapper {
+    margin-top: 12.4rem;
+}
+
+/* ==video== */
+.video_section .container {
+    max-width: 1140px;
+}
+.video_section h3 {
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2.2rem;
+}
+.video_box {
+    position: relative;
+}
+
+.video_box button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    background-color: transparent;
+}
+
+.video_box button img {
+    width: 10.7rem;
+}
+
+.video_box .custom_thamb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/home/video-thumb.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.video_box .thumb_overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video_box .thumb_overlay::before {
+    background: rgba(16, 16, 16, .7);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+.video_wrapper video {
+    width: 100%;
+    height: 678px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+.video_section .description p {
+    line-height: 2.1rem;
+    color: var(--light-black);
+    margin-top: 2.2rem;
+}
+.video_section .description p>a {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: var(--navy-blue);
+}
