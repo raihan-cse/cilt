@@ -54,7 +54,7 @@
 
 /* ==forum & transport== */
 .forum_transport_content {
-    background: var(--off-white);
+    background: var(--light-gray);
     padding: 11.5rem 8.2rem;
 }
 .forum_transport_content .icon img {

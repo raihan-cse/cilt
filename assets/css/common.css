@@ -58,6 +58,18 @@
     height: 2px;
     background: var(--light-gold);
 }
+.sc_tittle_wrapper .sc_description {
+    max-width: 97.8rem;
+    width: 100%;
+    margin: 3.2rem auto 0;
+}
+.sc_tittle_wrapper .sc_description p {
+    font-size: 2.2rem;
+    line-height: 3.4rem;
+    text-align: center;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+}
 
 /* ==description== */
 .description p {
