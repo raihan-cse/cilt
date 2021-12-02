@@ -94,6 +94,7 @@ a.btn_more {
     height: 1.1rem;
     margin-left: 1rem;
 }
+
 /* ==meta date== */
 .meta_date svg {
     width: 1.8rem;
@@ -105,6 +106,52 @@ a.btn_more {
     line-height: 1.8rem;
     color: var(--off-black);
 }
+
+
+/* ==top banner== */
+.hero_banner .inner_content, .hero_banner .banner_thumb {
+    position: relative;
+    overflow: hidden;
+}
+.banner_thumb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(89.98deg, rgba(187, 151, 96, 0.7) 44.17%, rgba(0, 0, 0, 0) 100.56%);
+}
+.banner_thumb img {
+    width: 100%;
+}
+.hero_banner .content_wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+    right: 0;
+    color: var(--white);
+}
+.hero_banner .hero_title {
+    font-size: 10rem;
+    line-height: 10.7rem;
+    font-weight: 700;
+    color: inherit;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 3.4rem;
+}
+.hero_banner .hero_title span {
+    color: var(--navy-blue);
+}
+.hero_banner p {
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    font-weight: 500;
+    color: inherit;
+}
+
 
 /* ==custom container width== */
 @media (min-width: 1400px) {
