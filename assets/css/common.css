@@ -95,11 +95,20 @@ a.btn_more {
     display: block;
 }
 
-.btn_box:not(.fill) {
+.btn_box:not(.fill), .btn_box:not(.fill-blue) {
     border: 1px solid var(--light-gold);
 }
-.btn_box:not(.fill) a.btn_more {
+.btn_box:not(.fill) a.btn_more, .btn_box:not(.fill-blue) a.btn_more  {
     color: var(--light-gold);
+}
+.btn_box.fill, .btn_box.fill-blue {
+    color: var(--white);
+}
+.btn_box.fill {
+    background: var(--light-gold);
+}
+.btn_box.fill-blue {
+    background: var(--navy-blue);
 }
 .btn_box.icon svg {
     width: 1rem;
