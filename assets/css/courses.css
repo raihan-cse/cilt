@@ -1,0 +1,87 @@
+@import "common.css";
+@import "our-partners.css";
+@import "footer.css";
+
+/* Courses cards */
+.courses_cards .row{
+    margin-top: -9.2rem;
+    margin-left: -4rem;
+    margin-right: -4rem;
+}
+.courses_cards .row>*{
+    padding-top: 9.2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.courses_cards .card{
+    position: relative;
+    border-color: #3610630F;
+    background: var(--light-gray);
+}
+.courses_cards .flag{
+    color: var(--white);
+    height: 7.5rem;
+    position: absolute;
+    top:0;
+    right: 3rem;
+    background : url(../images/courses/Vector_3.png) no-repeat;  
+    background-size: contain;
+}
+.courses_cards .flag p{
+    padding: 1rem .5rem 2.3rem;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.courses_cards .card:not(:nth-child()){
+    background: var( --light-gray);
+    margin-left: 2.1rem;
+}
+.courses_cards .card_image{
+    margin: 2.3rem 2.1rem 1.7rem;
+}
+.courses_cards .card_image img{
+    width: 100%;
+}
+.courses_cards .card-body {
+    padding: 0;
+}
+.courses_cards p{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    font-weight: 700;
+}
+.courses_cards .card-body-text{
+    padding: 0 2.1rem 3.5rem;
+
+}
+.courses_cards .hour,
+.courses_cards .fees{
+    display: flex;
+    align-content: flex-start;
+    padding: 0 2.4rem;
+
+}
+.courses_cards .hour{
+    padding-bottom: 1.5rem;
+}
+.courses_cards .fees{
+    padding-bottom: 4.5rem;
+
+}
+.courses_cards .hour img,
+.courses_cards .fees img{
+    width: 1.8rem;
+    height: 2.0rem;
+    margin-right: 2.7rem;
+}
+.courses_cards .hour p,
+.courses_cards .fees p{
+    color: var( --light-black);
+    font-weight: 400;
+}
+.courses_cards .btn_box_wrapper .btn_box{
+    display: block;
+    text-align: center;
+}
