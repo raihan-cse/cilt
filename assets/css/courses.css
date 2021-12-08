@@ -1,5 +1,4 @@
 @import "common.css";
-@import "our-partners.css";
 @import "footer.css";
 
 /* Courses cards */
@@ -17,6 +16,7 @@
     position: relative;
     border-color: #3610630F;
     background: var(--light-gray);
+    border: 1px solid var(--off-white);
 }
 .courses_cards .flag{
     color: var(--white);
@@ -33,11 +33,14 @@
     font-size: 1.6rem;
     line-height: 1.8rem;
 }
+.courses_cards .btn_box {
+    border: 0;
+}
 
-.courses_cards .card:not(:nth-child()){
+/* .courses_cards .card:not(:nth-child()){
     background: var( --light-gray);
     margin-left: 2.1rem;
-}
+} */
 .courses_cards .card_image{
     margin: 2.3rem 2.1rem 1.7rem;
 }

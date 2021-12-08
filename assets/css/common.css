@@ -93,18 +93,12 @@ a.btn_more {
 .btn_box {
     padding: 1.6rem 3rem;
     display: inline-block;
+    border: 1px solid var(--light-gold);
 }
 .btn_box a.btn_more {
     font-weight: 700;
     display: block;
 }
-
-.btn_box:not(.fill), .btn_box:not(.fill_blue) {
-    border: 1px solid var(--light-gold);
-}
-/* .btn_box:not(.fill) a.btn_more, .btn_box:not(.fill-blue) a.btn_more  {
-    color: var(--light-gold);
-} */
 .btn_box.fill a.btn_more, .btn_box.fill_blue a.btn_more {
     color: var(--white);
 }
