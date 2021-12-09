@@ -46,7 +46,6 @@
     margin-bottom: 9px;
 
 }
-
 .our_location .message_container{
     background: var(--white);
     text-align: center;
@@ -75,17 +74,15 @@
 .input_content textarea{
     height: 16.5rem;
 }
-/* .input_content.text_fild input{
-    height: 100%;
-} */
+
 .message_container .btn_box_wrapper{
     padding-bottom: 4rem;
     padding-top: 5.5rem;
 }
 .location_map .sc_title_wrapper{
-    margin-top: 15.8rem;
     margin-bottom: 7.4rem;
 }
-.location_map img{
-    padding-bottom: 12.3rem;
+.location_map_wrapper iframe {
+    width: 100%;
+    min-height: 65rem;
 }
