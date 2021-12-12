@@ -64,94 +64,6 @@
 .member_card_content .btn_box {
     margin-top: 2.3rem;
 }
-
-
-
-/* 
-.Message_container .Message_content p{
-    position: relative;
-}
-.Message_container .Message_text{
-    position: relative;
-    padding-bottom: 13.5rem;
-}
-.Message_container .Message_content .Message_text span.top-cote,
-.Message_container .Message_content .Message_text span.bottom-cote{
-    width: 2.8rem;
-    height: 2rem;
-
-
-}
-.Message_container .Message_content .Message_text span.top-cote{
-    position: absolute;
-    top: -9px;
-    left: -35px;
-
-}
-.Message_container .Message_content .Message_text span.bottom-cote{
-    position: absolute;
-    bottom: 0;
-    right: 7rem;
-
-}
-
-
-
-.board_cards .row{
-    margin-top: -7.3rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
-}
-.board_cards .row>*{
-    padding-top: 7.3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.board_cards .row{
-    justify-content: center;
-}
-.board_cards .card{
-    position: relative;
-    border-color: #3610630F;
-    background: var(--light-gray);
-}
-
-
-.board_cards .card:not(:nth-child()){
-    background: var( --light-gray);
-    margin-left: 2.1rem;
-}
-.board_cards .card_image{
-    margin: 1.8rem 1.8rem .9rem;
-}
-.board_cards .card_image img{
-    width: 100%;
-}
-.board_cards .card-body {
-    padding: 0;
-    text-align: center;
-}
-
-.board_cards .card-body h2{
-    color: var(--navy-blue);
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.3rem;
-    padding-bottom: 1.6rem;
-}
-.board_cards .card-body p{
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    padding-bottom: 1.6rem;
-    font-weight: 700;
-    color: var(--light-gold);
-
-}
-.board_cards .btn_box_wrapper{
-    text-align: center;
-    padding-bottom: 1.8rem;
-} */
-
 .message_image img {
     width: 100%;
 }
@@ -173,21 +85,20 @@
     .president_message_section {
         padding: 50px 0;
     }
-
     .message_content h2 {
         margin-bottom: 50px;
     }
-
     .message_content p::before {
         left: -15px;
         top : 4px;
     }
-
     .message_content p {
         padding-left: 23px;
     }
-
     .message_content p .bottom_cote img {
         left: 0;
+    }
+    .member_card_content .btn_box {
+        margin-top: 1.6rem;
     }
 }
