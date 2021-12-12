@@ -125,13 +125,9 @@ a.btn_more {
 .btn_box.fill_blue a.btn_more {
     color: var(--white);
 }
-<<<<<<< HEAD
-
-=======
 .btn_box.fill_blue a.btn_more.text_gold {
     color: var(--light-gold);
 }
->>>>>>> b9ecfcde1ab2384259235903ff6271594eab2ba5
 .btn_box.fill {
     background: var(--light-gold);
 }
