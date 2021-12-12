@@ -1,0 +1,98 @@
+@import "common.css";
+@import "header.css";
+/* @import "our-partners.css"; */
+@import "footer.css";
+
+
+/* Career style */
+.career_details{
+    margin-top: 8.9rem;
+    margin-bottom: 7rem;
+}
+
+.career_details .career_heading{
+    width: 108.4rem;
+    margin: 0 auto;
+}
+
+
+.career_details .career_heading h2{
+    position: relative;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5.8rem;
+    text-align: center;
+    color: var(--navy-blue);
+}
+.career_details .career_heading h2::after{
+    position: absolute;
+    content: '';
+    width: 26.6rem;
+    height: 2px;
+    margin-top: 1rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #BB9760;
+}
+.career_details .career_body_text{
+    width: 97.8rem;
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    margin-bottom: 5.4rem;
+}
+.career_details .career_body_text p{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+
+}
+/* 
+.career_details .career_body_footer{
+    margin-bottom: 7rem;
+} */
+.career_details .career_body_footer h3{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 4.7rem;
+    color: var(--navy-blue);
+}
+.career_cards{
+    padding-bottom: 11.5rem;
+}
+.career_cards .career_b_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+}
+.career_cards .blue_card{
+    width: 48.9rem;
+    color: var(--white);
+    padding-top: 5.1rem;
+    padding-bottom: 6.2rem;
+    padding-left: 7.4rem;
+    background: var(--navy-blue);
+    margin: 0 1.2rem;
+}
+.career_cards .blue_card .b_card_heading{
+    padding-bottom: 2.8rem;
+    
+}
+.career_cards .blue_card .b_card_heading h3{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    color: var(--light-gold);
+}
+.career_cards .blue_card .b_card_text p{
+    padding-bottom: 3.5rem;
+}
+.career_cards .blue_card .b_card_text p{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+}

@@ -1,0 +1,67 @@
+@import "common.css";
+/* @import "our-partners.css"; */
+@import "header.css";
+
+@import "footer.css";
+
+/* Courses cards */
+.news_cards{
+    padding-bottom: 37rem;
+}
+.news_cards .row{
+    margin-left: -5rem;
+    margin-right: -5rem;
+    margin-top: -7.5rem;
+    margin-bottom: -7.5rem;
+
+}
+.news_cards .row>*{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.news_cards .card{
+    position: relative;
+    border: 0;
+}
+
+.news_cards .card:not(:nth-child()){
+    background: var( --light-gray);
+    margin-left: 2.1rem;
+}
+
+
+.news_cards .card_image{
+    margin-bottom: 2.5rem;
+}
+.news_cards .card_image img{
+    width: 100%;
+}
+.news_cards .card-body {
+    padding: 0;
+}
+.news_cards p{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    padding-bottom: 4.6rem;
+}
+.news_cards .card-body-text{
+    color: var(--navy-blue);
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    font-weight: 700;
+}
+
+.news_cards .news_btn_date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news_cards .btn_box_wrapper .btn_box{
+    text-align: center;
+}

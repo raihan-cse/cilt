@@ -1,0 +1,33 @@
+@import "common.css";
+/* @import "our-partners.css"; */
+@import "header.css";
+
+@import "footer.css";
+
+/* career style */
+
+
+/* ==events== */
+.h_event{
+    margin: 9.9rem 0;
+}
+.h_events_card_content {
+    padding: 1.2rem 0;
+}
+.h_events_card_content h5 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 1.2rem;
+    min-height: 6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.h_event .box_btn_wrapper {
+    margin-top: 12.4rem;
+}

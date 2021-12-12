@@ -1,0 +1,674 @@
+@import "common.css";
+/* @import "our-partners.css"; */
+@import "header.css";
+
+@import "footer.css";
+
+
+.white-btn{
+
+    color: var(--white) ;
+    font-size: 16px ;
+    font-weight: 700 ;
+    text-align: center;
+
+}
+
+.white-btn:hover{
+    color: var(--white);
+}
+
+
+.yellow-btn,.purple-btn{
+    color: var(--white);
+    border-radius: 0;
+    padding: 16px 30px;
+    text-transform: uppercase;
+}
+.yellow-btn{
+    background: var(--light-gold);
+    border-color: var(--light-gold);
+
+}
+.yellow-btn:hover{
+    color: var(--white);
+}
+
+.purple-btn{
+    background: var(--navy-blue);
+    border-color: var(--navy-blue);
+}
+.purple-btn:hover{
+    color: var(--white);
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+/* internatioal section */
+.international_text{
+    padding-bottom: 7.2rem;
+    text-align: center;
+    margin-top: 5.4rem;
+}
+.international_text p{
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 5rem;
+    position: relative;
+
+    color: var(--navy-blue);
+}
+/* .international_content .international_text span.top-cote,
+.international_content .international_text span.bottom-cote{
+    width: 2.8rem;
+    height: 2rem;
+
+
+}
+.international_content .international_text span.top-cote{
+    margin-right: 1.3rem;
+}
+.international_content .international_text span.bottom-cote{
+   
+    margin-left: 1.3rem;
+
+} */
+
+.international_content .international_image{
+    width: 77.6rem;
+    margin: 0 auto;
+}
+.international_content .international_image img{
+    width: 100%;
+}
+.international_image h3{
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    margin-top: 3.2rem;
+    text-align: center;
+    color: var(--navy-blue);
+    position: relative;
+}
+.international_content .international_image span img{
+    width: 100%;
+    margin-top: -3rem;
+}
+/* internatioal section */
+
+.how_you_join{
+    background: var(--navy-blue);
+    color: var(--white);
+    text-align: center;
+    margin-top: 25rem;
+}
+.how_you_join h2{
+    padding-top: 5rem;
+    padding-bottom: 2.8rem;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    font-weight: 700;
+}
+.how_you_join p{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding-bottom: 4.8rem;
+}
+.how_you_join .btn_box_wrapper{
+    padding-bottom: 5rem;
+}
+
+/* internatioal section */
+
+.Professionals_comments{
+    background: var(--navy-blue);
+    color: var(--white);
+    text-align: center;
+    margin-top: 25rem;
+}
+.Professionals_comments .comments_content{
+    width: 66%;
+    margin: 0 auto;
+}
+.Professionals_comments p{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+}
+.Professionals_comments p span{
+    display: block;
+    text-align: end;
+    line-height: 4.4rem;
+}
+.Professionals_comments .btn_box_wrapper{
+    padding-bottom: 5rem;
+}
+
+
+
+
+
+
+/* .international .international_text p{
+    text-align: start;
+    width: 100%;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--navy-blue);
+    font-family: 'Roboto Condensed', sans-serif;
+} */
+/* 
+.international .international_text P {
+} */
+.international_text p::before,
+ .international_image h3::before{
+     display: inline;
+    content: '';
+    width: 2rem;
+    height: 1.4rem;
+    position: absolute;
+    background: url(../images/icons/double-coute-top.svg) no-repeat;
+
+    background-size: cover;
+    top: 0;
+    /* margin-left: 4.5rem; */
+    left: 5rem;
+}
+ .international_image h3::before{
+    left: 8rem;
+}
+.Bangladeshi_Forum .international_image h3{
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    text-align: start;
+    width: 365px;
+    margin: 0 auto;
+    color: var(--navy-blue);
+    margin-bottom: 4.7rem;
+}
+.Bangladeshi_Forum .international_image h3::before{
+    left: -3rem;
+    
+}
+ .international_text p::after,
+ .international_image h3::after{
+    content: '';
+    width: 2rem;
+    height: 1.4rem;
+    position: absolute;
+    background: url(../images/icons/double-coute-bottom.svg) no-repeat;
+
+    background-size: cover;
+    bottom: 2rem;
+    margin-left: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lists{
+    padding: 0;
+}
+
+
+.Benefits_of_CILT .list-item,
+.Group_By_Region .list-item{
+    display: flex;
+    padding-bottom: 28px;
+    padding-right: 6.5rem;
+
+}
+.Benefits_of_CILT .list-item:last-child,
+.Group_By_Region .list-item:last-child{
+    padding-bottom: 14.8rem;
+}
+ .icons{
+    width: 20px;
+    margin-right: 12px;
+}
+
+.member-btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px 23px;
+    margin-top: 22px;
+}
+.member-btn a img{
+    width: 20px;
+    margin-left: 14px;
+}
+/* 
+.Bangladeshi_Forum-body .Bangladeshi_Forum-items p span {
+    color: var(--light-gold);
+}
+*/
+
+.Bangladeshi_Forum-body .sc_title_wrapper.border_bottom{
+    margin-bottom: 8.3rem;
+} 
+.Benefits_of_CILT .btn_box_wrapper,
+.Group_By_Region .list-item {
+    padding-left: 20px;
+}
+/* 
+.Bangladeshi_Forum-body .Bangladeshi_Forum-items p,
+.Benefits_of_CILT .list-item p,
+.Group_By_Region .list-item{
+    font-weight: 500;
+    line-height: 21.09px;
+} */
+.Benefits_of_CILT-body .sc_title_wrapper.border_bottom,
+.Group_By_Region-body .sc_title_wrapper.border_bottom{
+    margin-bottom: 102px;
+}
+
+.image_container{
+    height: 100%;
+}
+.image_container img{
+    height: 100%;
+    object-fit: cover;
+}
+/* .membereship_Benefits  .list_with_icon .description{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+} */
+
+.membereship_Benefits  .list_with_icon span{
+    color: var(--light-gold);
+}
+.Bangladeshi_Forum .content{
+    margin-bottom: 4.7rem;
+}
+
+
+.Regional_Forum .sc_title_wrapper{
+    margin-bottom: 8.3rem;
+}
+
+/* .Bangladeshi_Forum h3{
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--navy-blue);
+} */
+ /* .Bangladeshi_Forum span img{
+    width: 100%;
+    margin-top: -3rem;
+} */
+
+
+
+
+/* Courses cards */
+
+/* .Bangladeshi_Forum .row{
+    margin-top: -7.3rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+.Bangladeshi_Forum .row>*{
+    padding-top: 7.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.Bangladeshi_Forum .row{
+    justify-content: center;
+}
+.Bangladeshi_Forum .card{
+    position: relative;
+    border-color: #3610630F;
+    background: var(--light-gray);
+} */
+
+
+/* .Bangladeshi_Forum .card:not(:nth-child()){
+    background: var( --light-gray);
+    margin-left: 2.1rem;
+}
+.Bangladeshi_Forum .card_image{
+    margin: 1.8rem 1.8rem .9rem;
+}
+.Bangladeshi_Forum .card_image img{
+    width: 100%;
+}
+.Bangladeshi_Forum .card-body {
+    padding: 0;
+    text-align: center;
+} */
+/* .Bangladeshi_Forum p{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    font-weight: 700;
+} */
+/* .Bangladeshi_Forum .card-body h2{
+    color: var(--navy-blue);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    padding-bottom: 1.6rem;
+}
+.Bangladeshi_Forum .card-body .card-body-text{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding-bottom: 1.6rem;
+    font-weight: 700;
+    color: var(--light-gold);
+}
+.Bangladeshi_Forum .card-body .email,
+.Bangladeshi_Forum .card-body .country{
+    font-size: 1.6rem;
+    color: var(--navy-blue);
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 1.9rem;
+}
+.Bangladeshi_Forum .card-body .country{
+    font-weight: 500;
+    padding-bottom: 3.5rem;
+} */
+
+
+
+/* Courses cards */
+/* .Regional_Forum .row{
+    margin-top: -7.3rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+.Regional_Forum .row>*{
+    padding-top: 7.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.Regional_Forum .row{
+    justify-content: center;
+}
+
+.Regional_Forum .card{
+    position: relative;
+    border-color: #3610630F;
+    background: var(--light-gray);
+} */
+
+
+/* .Regional_Forum .card:not(:nth-child()){
+    background: var( --light-gray);
+    margin-left: 2.1rem;
+}
+.Regional_Forum .card_image{
+    margin: 1.8rem 1.8rem .9rem;
+}
+.Regional_Forum .card_image img{
+    width: 100%;
+}
+.Regional_Forum .card-body {
+    padding: 0;
+    text-align: center;
+} */
+/* .Regional_Forum p{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    font-weight: 700;
+} */
+/* .Regional_Forum .card-body h2{
+    color: var(--navy-blue);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    padding-bottom: 1.6rem;
+}
+.Regional_Forum .card-body .card-body-text{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding-bottom: 1.6rem;
+    font-weight: 700;
+    color: var(--light-gold);
+}
+.Regional_Forum .card-body .email,
+.Regional_Forum .card-body .country{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--navy-blue);
+    line-height: 1.8rem;
+    margin-bottom: 1.9rem;
+}
+.Regional_Forum .card-body .country{
+    font-weight: 500;
+    padding-bottom: 3.5rem;
+} */
+
+
+/* .Membership_Grades{
+    padding-top: 240px;
+} */
+/* .Membership_Grades .Membership_content{
+    margin-top:200px ;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+    color: var(--white);
+}
+.Membership_Grades-items{
+    background: var(--navy-blue);
+    height: 100%; */
+    /* padding: 40px; */
+/* }
+.grades-header h2 {
+    font-size: 45px;
+    line-height: 34px;
+    font-weight: 700;
+    color: var(--light-gold);
+    padding: 6.3rem 5.8rem 0 5.8rem;
+    margin-bottom: 101px;
+}
+
+.grade-body .nav-tabs{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    padding: 0 5.8rem;
+}
+
+.grade-body .tab-content{
+    padding: 4.2rem 5.8rem 6.3rem;
+    color: var(--white);
+}
+
+.grade-body hr{
+    margin: 0;
+    margin-top: -20px;
+    width: 100%;
+    transform: scaleX(116%)
+}
+.grade-body .nav-tabs li:not(:last-child) {
+    margin-right: 5.8rem;
+}
+.grade-body .nav-tabs a {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: var(--white);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    background: none;
+    outline: none;
+    color: #fff;
+    padding-bottom: 1.7rem;
+    position: relative;
+} */
+
+/* .grade-body .nav-tabs a.active{
+    background: none;
+    outline: none;
+    border: 0;
+    font-weight: 700; */
+    /* border-bottom: 2px solid var(--light-gold); */
+/* } */
+/* .grade-body .nav-tabs a.active::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--light-gold);
+} */
+
+/* .membership_fees{
+    padding: 100px 0;
+} */
+/* 
+.membership_fees-body{
+    background: url(../img/Rectangle\ 50.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: var(--navy-blue);
+
+}
+.membership_fees-body .membership_fees-header{
+    color: var(--white);
+}
+.membership_fees-body .membership_fees-header p{
+    padding-top: 27px;
+    padding-bottom: 63px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.membership_fees-body .membership_fees-header h2{
+    padding-top: 69px;
+    margin-bottom: 30px;
+}
+
+.membership_fees-body .membership_fees-items p{
+    color: var(--white) !important;
+
+}
+.membership_fees-body .membership_fees-items .icon{
+    width: 10px;
+    margin-right: 12px;
+}
+.membership_fees-body .membership_fees-cards{
+    font-size: 14px;
+
+} */
+/* 
+.card{
+    padding: 0 10px ;
+    margin-top: 50px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--navy-blue);
+}
+.card .card-header{
+    padding-top: 30px;
+}
+
+.card .card-header, 
+.card .card-footer{
+    background: var(--white);
+    border: none;
+}
+.card .card-body{
+    padding-top: 0;
+}
+.card .card-footer{
+    padding-bottom: 30px;
+}
+
+.card .card-header .card-header-text,
+.card .card-header .card-header-purple-text
+{
+    padding: 7px;
+    font-size: 16px;
+    color: #fff !important;
+}
+.card .card-header .card-header-text{
+    background: var(--light-gold) !important;
+
+}
+.card .card-header .card-header-purple-text{
+    background: var(--navy-blue) !important;
+    
+}
+
+.card .card-body .card-title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--Ash-color);
+}
+
+.card .card-body .card-body-text,
+.card .card-body .card-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--Ash-color);
+}
+
+.card .card-body .card-body-top{
+    padding-bottom:50px ;
+}
+.card .card-body .card-body-text .card-text{
+    margin: 0;
+}
+ */
+
+
+/* Modal */
+/*
+
+.modal-dialog{
+    max-width: 61.6rem;
+}
+.modal-dialog .modal_taxt{
+    margin: 7.9rem 8rem 3.2rem;
+}
+.modal-dialog .modal_taxt p{
+    font-size: 2rem;
+    line-height: 3.4rem;
+    text-align: center;
+}
+.modal-dialog .modal_buttons {
+    text-align: center;
+    
+}
+.modal-dialog .modal_buttons a{
+    padding: 2.4rem 3.2rem;
+    border-radius: .8rem;
+    background-size: border-box;
+}
+.modal-dialog .modal_buttons a.modal_white-btn{
+    border: 2px solid #111111;
+    color: #111111;
+    margin-right: 3.2rem;
+
+}
+.modal-dialog .modal_buttons a.modal_black-btn{
+    border: 2px solid #111111;
+    background-color: #111111;
+    color: #fff;
+} */
