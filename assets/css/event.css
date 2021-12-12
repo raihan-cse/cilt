@@ -8,7 +8,7 @@
 
 
 /* ==events== */
-.h_event{
+.h_event.events_page{
     margin: 9.9rem 0;
 }
 .h_events_cards_wrapper .row {
@@ -36,4 +36,27 @@
 }
 .h_event .box_btn_wrapper {
     margin-top: 12.4rem;
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .h_events_cards_wrapper .row {
+        margin-top: -2.8rem;
+    }
+    .h_events_cards_wrapper .row>* {
+        padding-top: 2.8rem;
+    }
+    .h_events_card_content h5 {
+        font-size  : 1.3rem;
+        line-height: 1.5rem;
+        min-height: 3rem;
+    }
+    .h_events_card_content {
+        padding-top   : 1rem;
+    }
+    .h_event .box_btn_wrapper {
+        margin-top: 4.2rem;
+        text-align: left !important;
+    }
 }

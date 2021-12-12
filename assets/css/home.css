@@ -1,6 +1,7 @@
 @import "common.css";
 @import "header.css";
 @import "our-partners.css";
+@import "event.css";
 @import "footer.css";
 
 
@@ -96,7 +97,7 @@
 }
 
 /* ==events== */
-.h_events_card_content {
+/* .h_events_card_content {
     padding: 1.2rem 0;
 }
 
@@ -117,7 +118,7 @@
 
 .h_event .box_btn_wrapper {
     margin-top: 12.4rem;
-}
+} */
 
 /* ==video== */
 .video_section .container {
@@ -267,12 +268,6 @@
         width : 7px;
     }
 
-    .h_events_card_content h5 {
-        font-weight: 500;
-        font-size  : 13px;
-        line-height: 15px;
-    }
-
     .meta_date svg {
         height: 12px;
         width : 12px;
@@ -281,16 +276,6 @@
     .meta_date .date {
         font-size  : 12px;
         line-height: 14px;
-    }
-
-    .h_events_card_content {
-        padding-top   : 10px;
-        padding-bottom: 24px;
-    }
-
-    .h_event .box_btn_wrapper {
-        margin-top: 0;
-        text-align: left !important;
     }
 
     .video_section h3 {
