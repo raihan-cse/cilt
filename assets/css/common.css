@@ -125,9 +125,11 @@ a.btn_more {
 .btn_box.fill_blue a.btn_more {
     color: var(--white);
 }
+
 .btn_box.fill_blue a.btn_more.text_gold {
     color: var(--light-gold);
 }
+
 .btn_box.fill {
     background: var(--light-gold);
 }
@@ -215,51 +217,57 @@ a.btn_more {
     color: var(--light-gold);
 }
 
-/* ==members cards== */ 
+/* ==members cards== */
 .member_cards_wrapper .row {
-    margin-left: -1.2rem;
-    margin-right: -1.2rem;
-    margin-top: -2.4rem;
+    margin-left    : -1.2rem;
+    margin-right   : -1.2rem;
+    margin-top     : -2.4rem;
     justify-content: center;
 }
+
 .member_cards_wrapper .row>* {
-    padding-left: 1.2rem;
+    padding-left : 1.2rem;
     padding-right: 1.2rem;
-    padding-top: 2.4rem;
-}
-.member_card {
-    background: var(--light-gray);
-    border: 1px solid var(--off-white);
-    padding: 1.8rem;
-}
-.member_card_content h3 {
-    font-size: 2rem;
-    line-height: 2.3rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: .9rem 0 1.6rem;
-    color: var(--navy-blue);
-}
-.member_card_content p {
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    font-weight: 500;
-    margin-bottom: .6rem;
-    color: var(--light-gold);
-}
-.member_card_content .email,
-.member_card_content .country{
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    color: var(--light-black);
-}
-.member_card_content .email{
-    font-weight: 400;
-    margin: .6rem 0 1.9rem;
+    padding-top  : 2.4rem;
 }
 
-.member_card_content .country{
-    font-weight: 500;
+.member_card {
+    background: var(--light-gray);
+    border    : 1px solid var(--off-white);
+    padding   : 1.8rem;
+}
+
+.member_card_content h3 {
+    font-size     : 2rem;
+    line-height   : 2.3rem;
+    font-weight   : 700;
+    text-transform: uppercase;
+    margin        : .9rem 0 1.6rem;
+    color         : var(--navy-blue);
+}
+
+.member_card_content p {
+    font-size    : 1.8rem;
+    line-height  : 2.1rem;
+    font-weight  : 500;
+    margin-bottom: .6rem;
+    color        : var(--light-gold);
+}
+
+.member_card_content .email,
+.member_card_content .country {
+    font-size  : 1.6rem;
+    line-height: 1.8rem;
+    color      : var(--light-black);
+}
+
+.member_card_content .email {
+    font-weight: 400;
+    margin     : .6rem 0 1.9rem;
+}
+
+.member_card_content .country {
+    font-weight  : 500;
     margin-bottom: 1.2rem;
 }
 
@@ -419,10 +427,24 @@ a.btn_more {
         line-height: 18px;
     }
 
+<<<<<<< HEAD
+    .pb-90,
+    .py-90 {
+        padding-bottom: 30px;
+    }
+
+    .pt-90,
+    .py-90 {
+        padding-top: 30px;
+
+    }
+
+=======
 }
 @media (max-width: 575.98px) {
     .container {
         padding-left: 2.4rem;
         padding-right: 2.4rem;
     }
+>>>>>>> 7afd24d55a03a97383b701f0b9988f7ccaf95aa2
 }
