@@ -152,13 +152,42 @@
     padding-bottom: 1.8rem;
 } */
 
+.message_image img {
+    width: 100%;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .message_image {
+        max-width: 100%;
+        margin   : auto;
+    }
+
+    .message_image img {
+        width: 100%;
+    }
+}
+
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .president_message_section {
         padding: 50px 0;
     }
 
-    .message_image {
-        width: 100%;
+    .message_content h2 {
+        margin-bottom: 50px;
+    }
+
+    .message_content p::before {
+        left: -15px;
+        top : 4px;
+    }
+
+    .message_content p {
+        padding-left: 23px;
+    }
+
+    .message_content p .bottom_cote img {
+        left: 0;
     }
 }
