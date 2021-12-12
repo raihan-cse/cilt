@@ -51,6 +51,7 @@
     background: var(--white);
     text-align: center;
     margin:5rem 0;
+    padding: 5.7rem 4.6rem 4rem;
 }
 .message_container h2{
     font-size: 4rem;
@@ -58,12 +59,9 @@
     display: inline-block;
     line-height: 4.7rem;
     border-bottom: 2px solid var(--navy-blue);
-    color: var(--navy-blue);
-    margin: 0 13.6rem 6.6rem;
-    padding-top: 5.7rem;
+    margin-bottom: 6.6rem;
 }
 .message_container .input_content{
-    margin: 0 4.6rem;
     margin-bottom: 1rem;
 }
 .input_content input, .input_content textarea {
@@ -77,8 +75,7 @@
 }
 
 .message_container .btn_box_wrapper{
-    padding-bottom: 4rem;
-    padding-top: 5.5rem;
+    padding-top: 4.2rem;
 }
 .location_map .sc_title_wrapper{
     margin-bottom: 7.4rem;
@@ -86,4 +83,48 @@
 .location_map_wrapper iframe {
     width: 100%;
     min-height: 65rem;
+}
+
+/* `xxxl` applies to xx-large devices (large desktops, less than 1680px) */
+@media (max-width: 1679.98px) {}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .locatiuon_contant .location_footer h2, .locatiuon_contant .locatiuon_header h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .locatiuon_contant .locatiuon_header h2 {
+        margin-bottom: 2.8rem;
+    }
+    .locatiuon_header .header_contents h3 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-bottom: .8rem;
+    }
+    .locatiuon_contant .locatiuon_header p {
+        padding-right: 2rem;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+    .our_location .locatiuon_contant {
+        padding-bottom: 2rem;
+    }
+    .message_container h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 4.2rem;
+    }
 }
