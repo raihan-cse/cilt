@@ -1,4 +1,6 @@
 @import "common.css";
+@import "header.css";
+@import "footer.css";
 
 /* Membership/Membership upgrade Application */
 body {
@@ -138,7 +140,6 @@ body {
 }
 
 
-
 .form-control[type="file"]::file-selector-button {
     display: none;
 }
@@ -177,15 +178,8 @@ body {
     border          : 2px solid #b3a8c0;
 
 }
-
-.submitBtn {
-    margin-top : 8rem;
-    background : #361063;
-    border     : 2px solid #BB9760;
-    font-weight: bold;
-    font-size  : 2.5rem;
-    line-height: 2.9rem;
-    color      : #FFFFFF;
-    padding    : 2.2rem 4.7rem;
-    border     : none;
+.memershipForm .btn_box button {
+    border: 0;
+    background: transparent;
+    color: var(--white);
 }
