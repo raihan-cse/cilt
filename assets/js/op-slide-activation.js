@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(".partners_slider").owlCarousel({
         items: 3,
         margin: 16,
@@ -8,7 +8,7 @@ $(document).ready(function() {
         navText: ['<img src="assets/images/icons/angle-left-small.svg" alt="angle left">', '<img src="assets/images/icons/angle-right-small.svg" alt="angle right">'],
         responsive: {
             0: {
-                items: 3,
+                items: 2,
                 nav: false,
                 stagePadding: 42,
             },
