@@ -216,4 +216,89 @@
         padding      : 0;
         margin-bottom: 50px;
     }
+
+    .srt_content_wrapper {
+        padding: 34px 24px;
+    }
+
+    .srt_content_wrapper h2 {
+        font-weight: bold;
+        font-size  : 30px;
+        line-height: 40px;
+    }
+
+    .srt_content_wrapper .description p {
+        font-size  : 14px;
+        line-height: 30px;
+    }
+
+    .forum_transport_content {
+        padding      : 39px 44px 73px 44px;
+        margin-bottom: 20px;
+    }
+
+    .forum_transport_content .icon img {
+        height: 26px;
+        width : 26px;
+    }
+
+    .forum_transport_content h3 {
+        font-size    : 18px;
+        line-height  : 21px;
+        margin-top   : 25px;
+        margin-bottom: 15px;
+    }
+
+    .forum_transport_content .description p {
+        font-size    : 12px;
+        line-height  : 23px;
+        margin-bottom: 15px;
+    }
+
+    .forum_transport_content .btn_more svg {
+        height: 7px;
+        width : 7px;
+    }
+
+    .h_events_card_content h5 {
+        font-weight: 500;
+        font-size  : 13px;
+        line-height: 15px;
+    }
+
+    .meta_date svg {
+        height: 12px;
+        width : 12px;
+    }
+
+    .meta_date .date {
+        font-size  : 12px;
+        line-height: 14px;
+    }
+
+    .h_events_card_content {
+        padding-top   : 10px;
+        padding-bottom: 24px;
+    }
+
+    .h_event .box_btn_wrapper {
+        margin-top: 0;
+        text-align: left !important;
+    }
+
+    .video_section h3 {
+        font-weight  : normal;
+        font-size    : 18px;
+        line-height  : 21px;
+        margin-bottom: 10px;
+    }
+
+    .video_wrapper video {
+        height: 195px;
+    }
+
+    .video_box button img {
+        height: 45px;
+        width : 45px;
+    }
 }
