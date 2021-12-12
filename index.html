@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
@@ -999,18 +1000,18 @@
         </div>
         <div class="container">
             <div class="footer_inner_Two">
-                <div class="row row-cols-sm-2 row-cols-lg-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <div class="col">
                         <h6>ABOUT CILT</h6>
                         <ul class="icon">
                             <li>
-                                <a href="#" class="link">Institute History</a>
+                                <a href="about-us.html" class="link">Institute History</a>
                             </li>
                             <li>
                                 <a href="#" class="link">Regional Sections</a>
                             </li>
                             <li>
-                                <a href="#" class="link">Our Board</a>
+                                <a href="our-board.html" class="link">Our Board</a>
                             </li>
                         </ul>
                     </div>
@@ -1018,7 +1019,7 @@
                         <h6>EDUCATION</h6>
                         <ul class="icon">
                             <li>
-                                <a href="#" class="link">Our Courses
+                                <a href="courses.html" class="link">Our Courses
                                 </a>
                             </li>
                             <li>
@@ -1033,13 +1034,13 @@
                         <h6>MEMBERSHIP GROUPS</h6>
                         <ul class="icon">
                             <li>
-                                <a href="#" class="link">Women in Logistics & Transport</a>
+                                <a href="women_in_logistics.html" class="link">Women in Logistics & Transport</a>
                             </li>
                             <li>
-                                <a href="#" class="link">Young Professionals</a>
+                                <a href="young_professional.html" class="link">Young Professionals</a>
                             </li>
                             <li>
-                                <a href="#" class="link">Corporate Membership</a>
+                                <a href="corporate_membership_overview.html" class="link">Corporate Membership</a>
                             </li>
                         </ul>
                     </div>
@@ -1047,15 +1048,14 @@
                         <h6>CONTACT WITH US</h6>
                         <ul>
                             <li>
-                                <a href="#" onclick="return false">MHK Terminal (4th Floor), 110 Kazi Nazrul Islam
-                                    Avenue,
+                                <a href="contact-us.html" onclick="return false">MHK Terminal (4th Floor), 110 Kazi Nazrul Islam Avenue,
                                     Banglamotors (3.08 mi) Dhaka, Bangladesh Dhaka-1000</a>
                             </li>
                             <li>
-                                <a href="#" class="link">01711-434899</a>
+                                <a href="contact-us.html" class="link">01711-434899</a>
                             </li>
                             <li>
-                                <a href="#" class="link">See Details</a>
+                                <a href="/" class="link">See Details</a>
                             </li>
                         </ul>
                     </div>
@@ -1118,6 +1118,7 @@
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/op-slide-activation.js"></script>
     <script src="assets/js/common.js"></script>
 
     <script>
@@ -1131,27 +1132,6 @@
                 csthumb.style.display = "none";
             }
         }
-
-        // our partners
-        $(".partners_slider").owlCarousel({
-            items: 3,
-            margin: 16,
-            loop: true,
-            dots: false,
-            nav: true,
-            navText: ['<img src="assets/images/icons/angle-left-small.svg" alt="angle left">', '<img src="assets/images/icons/angle-right-small.svg" alt="angle right">'],
-            responsive: {
-                0: {
-                    items: 3,
-                    nav: false,
-                    stagePadding: 42,
-                },
-                800: {
-                    items: 6,
-                }
-            }
-        });
-
 
         $('.hero-carousel').owlCarousel({
             items: 1,

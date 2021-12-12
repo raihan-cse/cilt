@@ -10,7 +10,10 @@ $(document).ready(function () {
             0: {
                 items: 2,
                 nav: false,
-                stagePadding: 42,
+                // stagePadding: 42,
+            },
+            600: {
+                items: 3,
             },
             800: {
                 items: 6,
