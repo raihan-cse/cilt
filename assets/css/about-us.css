@@ -1,6 +1,8 @@
 @import "common.css";
+@import "header.css";
 @import "our-partners.css";
 @import "footer.css";
+
 
 /* ==who we are== */
 .who_we_are {

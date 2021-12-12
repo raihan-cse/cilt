@@ -1,0 +1,148 @@
+@import "common.css";
+@import "header.css";
+
+@import "footer.css";
+
+
+/* banner section */
+.president_message_section{
+    background: var(--navy-blue);
+    padding: 13rem 0;
+}
+.message_image {
+    margin-top: 7.2rem;
+    max-width: 44.9rem;
+}
+.message_image h3{
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    text-align: center;
+    margin-top: 2.2rem;
+    color: var(--white);
+}
+
+.message_content h2{
+    text-align: center;
+    color: var(--light-gold);
+    font-size: 3rem;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    color: var(--light-gold);
+}
+.message_content p {
+    font-size: 1.5rem;
+    line-height: 2.9rem;
+    font-weight: 500;
+    color: var(--white);
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+}
+.message_content p .bottom_cote img {
+    position: absolute;
+    top: 0;
+    left: 5px;
+} 
+.message_content p::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/double-coute-top.svg);
+    background-repeat: no-repeat;
+    width: 2.8rem;
+    height: 1.9rem;
+    background-size: 2.8rem 1.9rem;
+    left: -32px;
+    top: -12px;
+}
+
+.member_card_content .btn_box {
+     margin-top: 2.3rem;
+}
+
+
+
+/* 
+.Message_container .Message_content p{
+    position: relative;
+}
+.Message_container .Message_text{
+    position: relative;
+    padding-bottom: 13.5rem;
+}
+.Message_container .Message_content .Message_text span.top-cote,
+.Message_container .Message_content .Message_text span.bottom-cote{
+    width: 2.8rem;
+    height: 2rem;
+
+
+}
+.Message_container .Message_content .Message_text span.top-cote{
+    position: absolute;
+    top: -9px;
+    left: -35px;
+
+}
+.Message_container .Message_content .Message_text span.bottom-cote{
+    position: absolute;
+    bottom: 0;
+    right: 7rem;
+
+}
+
+
+
+.board_cards .row{
+    margin-top: -7.3rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+.board_cards .row>*{
+    padding-top: 7.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.board_cards .row{
+    justify-content: center;
+}
+.board_cards .card{
+    position: relative;
+    border-color: #3610630F;
+    background: var(--light-gray);
+}
+
+
+.board_cards .card:not(:nth-child()){
+    background: var( --light-gray);
+    margin-left: 2.1rem;
+}
+.board_cards .card_image{
+    margin: 1.8rem 1.8rem .9rem;
+}
+.board_cards .card_image img{
+    width: 100%;
+}
+.board_cards .card-body {
+    padding: 0;
+    text-align: center;
+}
+
+.board_cards .card-body h2{
+    color: var(--navy-blue);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    padding-bottom: 1.6rem;
+}
+.board_cards .card-body p{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding-bottom: 1.6rem;
+    font-weight: 700;
+    color: var(--light-gold);
+
+}
+.board_cards .btn_box_wrapper{
+    text-align: center;
+    padding-bottom: 1.8rem;
+} */
