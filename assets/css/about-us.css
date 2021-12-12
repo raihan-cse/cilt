@@ -360,6 +360,14 @@
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .core_values .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .core_values .sc_tittle_wrapper {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
     .who_we_are {
         padding-top: 39px;
     }
