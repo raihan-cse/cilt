@@ -9,46 +9,54 @@
 .st_section .sc_tittle_wrapper {
     padding-bottom: 2.4rem;
 }
+
 .st_section .content_wrapper {
     text-align: center;
-    padding: 7.2rem 4.2rem;
+    padding   : 7.2rem 4.2rem;
 }
+
 .st_section .row {
     justify-content: center;
 }
+
 .st_section .content_wrapper img {
-    width: 4rem;
-    height: 4rem; /* not usable */
+    width : 4rem;
+    height: 4rem;
+    /* not usable */
 }
+
 .st_section .content_wrapper p {
-    font-size: 2.4rem;
+    font-size  : 2.4rem;
     line-height: 2.8rem;
-    text-align: center;
-    color: var(--navy-blue);
-    margin-top: 2rem;
+    text-align : center;
+    color      : var(--navy-blue);
+    margin-top : 2rem;
 }
 
 /* ==short history== */
 .srt_content_wrapper {
-    background: var(--navy-blue);
-    color: var(--white);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    background     : var(--navy-blue);
+    color          : var(--white);
+    height         : 100%;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
-    padding: 4.2rem 10% 4.2rem 30%;
+    padding        : 4.2rem 10% 4.2rem 30%;
 }
+
 .srt_content_wrapper h2 {
-    font-size: 5rem;
-    line-height: 5.4rem;
-    font-weight: 700;
-    color: inherit;
+    font-size    : 5rem;
+    line-height  : 5.4rem;
+    font-weight  : 700;
+    color        : inherit;
     margin-bottom: 2.6rem;
 }
+
 .srt_content_wrapper .description p {
     margin-bottom: 5.2rem;
-    color: inherit;
+    color        : inherit;
 }
+
 .srt_image_wrapper img {
     width: 100%;
 }
@@ -56,29 +64,34 @@
 /* ==forum & transport== */
 .forum_transport_content {
     background: var(--light-gray);
-    padding: 11.5rem 8.2rem;
+    padding   : 11.5rem 8.2rem;
 }
+
 .forum_transport_content .icon img {
-    width: 5rem;
-    height: 5rem; /* not usable */
+    width : 5rem;
+    height: 5rem;
+    /* not usable */
 }
+
 .forum_transport_content h3 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    font-style: 700;
-    color: var(--navy-blue);
+    font-size     : 3rem;
+    line-height   : 3.5rem;
+    font-style    : 700;
+    color         : var(--navy-blue);
     text-transform: uppercase;
-    margin-top: 2rem;
-    margin-bottom: 2.8rem;
+    margin-top    : 2rem;
+    margin-bottom : 2.8rem;
 }
+
 .forum_transport_content .description p {
-    line-height: 2.1rem;
-    color: var(--off-black);
+    line-height  : 2.1rem;
+    color        : var(--off-black);
     margin-bottom: 5.2rem;
 }
+
 .forum_transport_content .btn_more svg {
-    width: 1rem;
-    height: 1rem;
+    width      : 1rem;
+    height     : 1rem;
     margin-left: .7rem;
 }
 
@@ -86,20 +99,22 @@
 .h_events_card_content {
     padding: 1.2rem 0;
 }
+
 .h_events_card_content h5 {
-    font-size: 2.4rem;
-    line-height: 3rem;
-    font-weight: 500;
-    color: var(--black);
-    margin-bottom: 1.2rem;
-    min-height: 6rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
+    font-size         : 2.4rem;
+    line-height       : 3rem;
+    font-weight       : 500;
+    color             : var(--black);
+    margin-bottom     : 1.2rem;
+    min-height        : 6rem;
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+    display           : -webkit-box;
     -webkit-line-clamp: 2;
-    line-clamp: 2;
+    line-clamp        : 2;
     -webkit-box-orient: vertical;
 }
+
 .h_event .box_btn_wrapper {
     margin-top: 12.4rem;
 }
@@ -108,22 +123,24 @@
 .video_section .container {
     max-width: 1140px;
 }
+
 .video_section h3 {
-    font-size: 3.8rem;
-    line-height: 4.5rem;
+    font-size     : 3.8rem;
+    line-height   : 4.5rem;
     text-transform: uppercase;
-    margin-bottom: 2.2rem;
+    margin-bottom : 2.2rem;
 }
+
 .video_box {
     position: relative;
 }
 
 .video_box button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 0;
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%, -50%);
+    border          : 0;
     background-color: transparent;
 }
 
@@ -132,48 +149,71 @@
 }
 
 .video_box .custom_thamb {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(../images/home/video-thumb.png);
-    background-size: cover;
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    bottom             : 0;
+    left               : 0;
+    background-image   : url(../images/home/video-thumb.png);
+    background-size    : cover;
     background-position: top center;
-    background-repeat: no-repeat;
+    background-repeat  : no-repeat;
 }
 
 .video_box .thumb_overlay {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width   : 100%;
+    height  : 100%;
 }
 
 .video_box .thumb_overlay::before {
     background: rgba(16, 16, 16, .7);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
+    position  : absolute;
+    top       : 0;
+    right     : 0;
+    bottom    : 0;
+    left      : 0;
+    content   : '';
 }
 
 .video_wrapper video {
-    width: 100%;
-    height: 678px;
-    object-fit: cover;
+    width        : 100%;
+    height       : 678px;
+    object-fit   : cover;
     margin-bottom: 0;
 }
+
 .video_section .description p {
     line-height: 2.1rem;
-    color: var(--light-black);
-    margin-top: 2.2rem;
+    color      : var(--light-black);
+    margin-top : 2.2rem;
 }
+
 .video_section .description p>a {
-    font-size: 1.7rem;
+    font-size  : 1.7rem;
     line-height: 2rem;
     font-weight: 500;
-    color: var(--navy-blue);
+    color      : var(--navy-blue);
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .st_section .content_wrapper img {
+        height: 14px;
+        width : 21px;
+    }
+
+    .st_section .content_wrapper p {
+        font-weight: 500;
+        font-size  : 12px;
+        line-height: 14px;
+        text-align : center;
+    }
+
+    .st_section .content_wrapper {
+        padding      : 0;
+        margin-bottom: 50px;
+    }
 }
