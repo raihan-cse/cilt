@@ -338,11 +338,18 @@ a.btn_more {
 @media (max-width: 991.98px) {}
 @media (max-width: 767.98px) {
     .pt-90, .py-90 {
-        padding-top: 30px;
+        padding-top: 6.2rem;
+    }
+    .pb-90, .py-90 {
+        padding-top: 6.2rem;
     }
     .pt-180,
     .py-180 {
-        padding-top: 46px;
+        padding-top: 9.2rem;
+    }
+    .pb-180,
+    .py-180 {
+        padding-bottom: 9.2rem;
     }
 
     
@@ -355,9 +362,6 @@ a.btn_more {
     .sc_tittle_wrapper .sc_description {
         font-size     : 18px;
         line-height   : 29px;
-        text-align    : center;
-        letter-spacing: -0.01em;
-        margin-top    : 29px;
     }
     .sc_title_wrapper.border_bottom {
         margin-bottom: 27px;
@@ -365,15 +369,27 @@ a.btn_more {
         line-height  : 35px;
     }
     .sc_color_title {
-        font-weight: normal;
-        font-size  : 30px;
-        line-height: 35px;
+        font-size  : 3rem;
+        line-height: 3.5rem;
+    }
+    .sc_tittle_wrapper .sc_description p {
+        font-size: 1.8rem;
+        line-height: 2.9rem;
     }
 
     /* ==description== */
     .description p {
         font-size  : 14px;
         line-height: 25px;
+    }
+
+    /* ==btn box== */
+    .btn_box {
+        padding: 1.4rem 2.7rem;
+    }
+    a.btn_more {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
     }
 
 
@@ -383,10 +399,9 @@ a.btn_more {
         height: 617px;
     }
     .hero_banner .hero_title {
-        font-weight  : bold;
-        font-size    : 90px;
-        line-height  : 90px;
-        margin-bottom: 10px;
+        font-size    : 9rem;
+        line-height  : 9rem;
+        margin-bottom: 1rem;
     }
     .banner_thumb img {
         width          : 100%;
