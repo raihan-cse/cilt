@@ -9,7 +9,9 @@
 }
 
 .partners_slider .owl-nav button.owl-next,
-.partners_slider .owl-nav button.owl-prev {
+.partners_slider .owl-nav button.owl-prev,
+.hero-carousel .owl-nav button.owl-next,
+.hero-carousel .owl-nav button.owl-prev {
     position         : absolute;
     top              : 50%;
     transform        : translateY(-50%);
@@ -17,7 +19,9 @@
 }
 
 .partners_slider .owl-nav button.owl-next img,
-.partners_slider .owl-nav button.owl-prev img {
+.partners_slider .owl-nav button.owl-prev img,
+.hero-carousel .owl-nav button.owl-next img,
+.hero-carousel .owl-nav button.owl-prev img {
     width: 10px;
 }
 
@@ -25,8 +29,41 @@
     right: 0;
 }
 
+.hero-carousel .owl-nav button.owl-next {
+    right     : 0;
+    visibility: hidden;
+    opacity   : 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.hero-carousel .owl-nav button.owl-prev {
+    left      : 0px;
+    visibility: hidden;
+    opacity   : 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+
 .partners_slider .owl-nav button.owl-prev {
     left: 0;
+}
+
+.hero-carousel:hover .owl-nav button.owl-prev {
+    left      : 4%;
+    visibility: visible;
+    opacity   : 1;
+}
+
+.hero-carousel:hover .owl-nav button.owl-next {
+    right     : 4%;
+    visibility: visible;
+    opacity   : 1;
+}
+
+
+.hero-carousel .owl-nav button.owl-next img,
+.hero-carousel .owl-nav button.owl-prev img {
+    /* height: 40px; */
+    width: 39px;
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */

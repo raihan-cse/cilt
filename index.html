@@ -627,19 +627,61 @@
 
 
     <!-- banner section -->
-    <section class="hero_banner">
-        <div class="inner_content">
-            <div class="banner_thumb">
-                <img src="assets/images/home/banner-1.png" alt="banner-1">
+    <div class="hero-carousel owl-carousel">
+        <section class="hero_banner">
+            <div class="inner_content">
+                <div class="banner_thumb">
+                    <img src="assets/images/home/banner-1.png" alt="banner-1">
+                </div>
+                <div class="content_wrapper">
+                    <h1 class="hero_title">we are <span>cilt</span></h1>
+                    <p class="">Celebrating 100 years supporting
+                        <br> transport and logistics professional
+                    </p>
+                </div>
             </div>
-            <div class="content_wrapper">
-                <h1 class="hero_title">we are <span>cilt</span></h1>
-                <p class="">Celebrating 100 years supporting
-                    <br> transport and logistics professional
-                </p>
+        </section>
+        <section class="hero_banner">
+            <div class="inner_content">
+                <div class="banner_thumb">
+                    <img src="assets/images/home/banner-1.png" alt="banner-1">
+                </div>
+                <div class="content_wrapper">
+                    <h1 class="hero_title">we are <span>cilt</span></h1>
+                    <p class="">Celebrating 100 years supporting
+                        <br> transport and logistics professional
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="hero_banner">
+            <div class="inner_content">
+                <div class="banner_thumb">
+                    <img src="assets/images/home/banner-1.png" alt="banner-1">
+                </div>
+                <div class="content_wrapper">
+                    <h1 class="hero_title">we are <span>cilt</span></h1>
+                    <p class="">Celebrating 100 years supporting
+                        <br> transport and logistics professional
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="hero_banner">
+            <div class="inner_content">
+                <div class="banner_thumb">
+                    <img src="assets/images/home/banner-1.png" alt="banner-1">
+                </div>
+                <div class="content_wrapper">
+                    <h1 class="hero_title">we are <span>cilt</span></h1>
+                    <p class="">Celebrating 100 years supporting
+                        <br> transport and logistics professional
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
     <!-- stronger together -->
     <section class="st_section py-90">
@@ -1108,6 +1150,17 @@
                     items: 6,
                 }
             }
+        });
+
+
+        $('.hero-carousel').owlCarousel({
+            items: 1,
+            margin: 20,
+            autoHeight: true,
+            nav: true,
+            dots: false,
+            navText: ['<img src="assets/images/icons/angle-left-small.svg" alt="angle left">', '<img src="assets/images/icons/angle-right-small.svg" alt="angle right">'],
+
         });
     </script>
 </body>
