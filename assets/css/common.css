@@ -90,6 +90,7 @@ a.btn_more {
     text-align: center;
     display: inline-block;
 }
+
 .btn_box {
     padding: 1.6rem 3rem;
     display: inline-block;
@@ -101,6 +102,9 @@ a.btn_more {
 }
 .btn_box.fill a.btn_more, .btn_box.fill_blue a.btn_more {
     color: var(--white);
+}
+.btn_box.fill_blue a.btn_more.text_gold {
+    color: var(--light-gold);
 }
 .btn_box.fill {
     background: var(--light-gold);

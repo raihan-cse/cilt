@@ -102,7 +102,7 @@
     background: var(--navy-blue);
     color: var(--white);
     text-align: center;
-    margin-top: 25rem;
+    margin-top: 12rem;
 }
 .how_you_join h2{
     padding-top: 5rem;
@@ -121,12 +121,10 @@
 }
 
 /* internatioal section */
-
 .Professionals_comments{
     background: var(--navy-blue);
     color: var(--white);
     text-align: center;
-    margin-top: 25rem;
 }
 .Professionals_comments .comments_content{
     width: 66%;
@@ -148,22 +146,6 @@
 }
 
 
-
-
-
-
-/* .international .international_text p{
-    text-align: start;
-    width: 100%;
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: 5rem;
-    color: var(--navy-blue);
-    font-family: 'Roboto Condensed', sans-serif;
-} */
-/* 
-.international .international_text P {
-} */
 .international_text p::before,
  .international_image h3::before{
      display: inline;
@@ -185,11 +167,12 @@
     font-size: 2.2rem;
     line-height: 3.5rem;
     font-weight: 500;
-    text-align: start;
-    width: 365px;
+    text-align: center;
+    max-width: 36.2rem;
     margin: 0 auto;
     color: var(--navy-blue);
     margin-bottom: 4.7rem;
+    letter-spacing: -0.01em;
 }
 .Bangladeshi_Forum .international_image h3::before{
     left: -3rem;
