@@ -1,7 +1,5 @@
 @import "common.css";
-/* @import "our-partners.css"; */
 @import "header.css";
-
 @import "footer.css";
 
 
@@ -163,28 +161,19 @@
     padding-bottom: 5rem;
 }
 
-
 .wl_text_box .row{
-    margin-top: -3.4rem;
     margin-left: -1.7rem;
     margin-right: -1.7rem;
 }
 
-
 .wl_text_box .wl_text_content{
-    padding-left: 7.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 3.4rem;
-    margin-left: 1.7rem;
-    margin-right: 1.7rem;
-    height: 510px;
+    margin-top: 1.5rem;
+    min-height: 54rem;
     background: #f1f1f1;
+    padding: 13.3rem 7rem 11.8rem 7.8rem;
 }
 .wl_text_box .wl_text_content .wl_text_header{
     padding-bottom: 3.5rem;
-    padding-top: 133px;
 }
 .wl_text_box .wl_text_content .wl_text_header h3{
     font-size: 3rem;
@@ -243,8 +232,6 @@
     margin-left: 14px;
 }
 
-
-
 .wilat_regional_form .comments_content,
     .Regional_Forum .comments_content{
     margin: 0;
@@ -302,7 +289,6 @@
     color: var(--navy-blue);
 }
 
-
 .wilat_regional_form_body .wilat_regional_form-items p span {
     color: var(--light-gold);
 }
@@ -346,13 +332,6 @@
     margin-bottom: 4.7rem;
 }
 
-.wilat_regional_form h3{
-    font-size: 2.2rem;
-    line-height: 3.5rem;
-    font-weight: 500;
-    text-align: center;
-    color: var(--navy-blue);
-}
  .wilat_regional_form span img{
     width: 100%;
     margin-top: -3rem;
@@ -373,55 +352,6 @@
 .wilat_regional_form .row{
     justify-content: center;
 }
-/* .wilat_regional_form .card{
-    position: relative;
-    border-color: #3610630F;
-    background: var(--light-gray);
-}
-
-
-.wilat_regional_form .card:not(:nth-child()){
-    background: var( --light-gray);
-    margin-left: 2.1rem;
-}
-.wilat_regional_form .card_image{
-    margin: 1.8rem 1.8rem .9rem;
-}
-.wilat_regional_form .card_image img{
-    width: 100%;
-}
-.wilat_regional_form .card-body {
-    padding: 0;
-    text-align: center;
-}
-
-.wilat_regional_form .card-body h2{
-    color: var(--navy-blue);
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.3rem;
-    padding-bottom: 1.6rem;
-}
-.wilat_regional_form .card-body .card-body-text{
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    padding-bottom: 1.6rem;
-    font-weight: 700;
-    color: var(--light-gold);
-}
-.wilat_regional_form .card-body .email,
-.wilat_regional_form .card-body .country{
-    font-size: 1.6rem;
-    color: var(--navy-blue);
-    font-weight: 400;
-    line-height: 1.8rem;
-    margin-bottom: 1.9rem;
-}
-.wilat_regional_form .card-body .country{
-    font-weight: 500;
-    padding-bottom: 3.5rem;
-} */
-
 
 
 /* Courses cards */
@@ -441,52 +371,52 @@
 .Regional_Forum .sc_title_wrapper{
     margin-bottom: 8.3rem;
  }
-/*
-.Regional_Forum .card{
-    position: relative;
-    border-color: #3610630F;
-    background: var(--light-gray);
-}
 
 
-.Regional_Forum .card:not(:nth-child()){
-    background: var( --light-gray);
-    margin-left: 2.1rem;
-}
-.Regional_Forum .card_image{
-    margin: 1.8rem 1.8rem .9rem;
-}
-.Regional_Forum .card_image img{
-    width: 100%;
-}
-.Regional_Forum .card-body {
-    padding: 0;
-    text-align: center;
-}
+ @media (max-width: 575.98px) {
+     .hero_banner.women_logistic .hero_title  {
+        font-size: 5rem;
+        line-height: 5rem;
+     }
+     .wl_section_text h3 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+    .wl_text_box .wl_text_content .wl_text_header h3 {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+    }
+    .wl_text_box .wl_text_content {
+        padding: 4.2rem 2.4rem;
+        min-height: auto;
+    }
+    .wl_text_box .wl_text_content .wl_text_body {
+        padding-right: 0;
+    }
+    .wl_text_box .wl_text_content .wl_text_body p, .Professionals_comments p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    .wl_text_box .wl_text_content .wl_text_header {
+        padding-bottom: 2.4rem;
+    }
 
-.Regional_Forum .card-body h2{
-    color: var(--navy-blue);
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.3rem;
-    padding-bottom: 1.6rem;
-}
-.Regional_Forum .card-body .card-body-text{
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    padding-bottom: 1.6rem;
-    font-weight: 700;
-    color: var(--light-gold);
-}
-.Regional_Forum .card-body .email,
-.Regional_Forum .card-body .country{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--navy-blue);
-    line-height: 1.8rem;
-    margin-bottom: 1.9rem;
-}
-.Regional_Forum .card-body .country{
-    font-weight: 500;
-    padding-bottom: 3.5rem;
-} */
+    .Professionals_comments .comments_content {
+        width: 100%;
+    }
+    .wl_transpoart .comments_content {
+        margin: 0;
+        margin-top: 3.2rem;
+        padding-left: 1.6rem;
+    }
+    .wl_transpoart .comments_content .wl_blue_image p {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+    }
+    .wilat_regional_form .comments_content .wl_blue_image, .Regional_Forum .comments_content .wl_blue_image {
+        width: 90%;
+    }
+    .wilat_regional_form_body .sc_title_wrapper.border_bottom,  .Regional_Forum .sc_title_wrapper {
+        margin-bottom: 4.3rem;
+    }
+ }

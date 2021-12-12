@@ -467,6 +467,7 @@ a.btn_more {
     .hero_banner .content_wrapper {
         left: 24px;
         top : 60%;
+        transform: translateY(-60%);
     }
 
     .hero_banner p {
@@ -484,6 +485,15 @@ a.btn_more {
     .member_card_content p {
         font-size: 1.6rem;
         line-height: 2.2rem;
+    }
+    .member_card_content .email, .member_card_content .country {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    /* ==left right content== */
+    .left_right_content .sc_title_wrapper.border_bottom {
+        margin-bottom: 5.2rem;
     }
 
 }
