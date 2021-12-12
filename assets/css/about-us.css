@@ -286,17 +286,45 @@
 }
 
 
-
-/* `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-
-    .join_cilt .container {
-        padding-left : 24px;
-        padding-right: 24px;
+@media (max-width: 1199.98px) {
+    .wwa_cotnent_wrapper {
+        padding: 4.2rem 6.2rem;
     }
 
+    .wwd_card {
+        padding: 3rem 3.5rem 3rem;
+    }
+    .wwd_card P {
+        min-height: 11rem;
+    }
+
+
+    .join_cilt_content_inner img {
+        max-width: 54.8rem;
+    }
+
+    .join_cilt_content_inner .text_box.text_6 {
+        left: -62%;
+        transform: translate(62%, -0%);
+    }
+    .join_cilt_content_inner .text_box.text_7 {
+        left: -94%;
+        transform: translate(94%, -50%);
+    }
+    .join_cilt_content_inner .text_box.text_8 {
+        left: -38%;
+        transform: translate(38%, -4%);
+    }
+}
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
     .join_cilt_content_wrapper {
         min-height: initial;
+    }
+
+    /* ==what we do== */
+    .wwd_card {
+        padding: 3rem 2.5rem 3rem;
     }
 
     .center_text_box {
@@ -332,11 +360,6 @@
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .core_values .container {
-        padding-left : 0;
-        padding-right: 0;
-    }
-
     .who_we_are {
         padding-top: 39px;
     }
@@ -349,11 +372,6 @@
         font-size    : 25px;
         line-height  : 29px;
         margin-bottom: 23px;
-    }
-
-    .what_we_do .container {
-        padding-left : 24px;
-        padding-right: 24px;
     }
 
     .wwd_card {

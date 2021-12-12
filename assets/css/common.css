@@ -329,8 +329,13 @@ a.btn_more {
 }
 
 
-
-/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 1199.98px) {
+    .description p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
+@media (max-width: 991.98px) {}
 @media (max-width: 767.98px) {
 
     .hero_banner .inner_content,
@@ -366,11 +371,6 @@ a.btn_more {
 
     .pt-90 {
         padding-top: 30px;
-    }
-
-    .sc_tittle_wrapper {
-        padding-left : 24px;
-        padding-right: 24px;
     }
 
     .sc_title {
@@ -414,4 +414,10 @@ a.btn_more {
         line-height: 35px;
     }
 
+}
+@media (max-width: 575.98px) {
+    .container {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
 }
