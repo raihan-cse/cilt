@@ -46,6 +46,7 @@ body {
 
 .groupFrom {
     padding-bottom: 7.1rem;
+    position      : relative;
 }
 
 .groupFrom2 {
@@ -178,8 +179,26 @@ body {
     border          : 2px solid #b3a8c0;
 
 }
+
 .memershipForm .btn_box button {
-    border: 0;
+    border    : 0;
     background: transparent;
-    color: var(--white);
+    color     : var(--white);
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .formTitle {
+        font-size  : 30px;
+        line-height: 35px;
+    }
+
+    .form-label {
+        font-size: 18px;
+    }
+
+    .form-control {
+        font-size: 16px;
+    }
 }
