@@ -38,10 +38,6 @@
     border: 0;
 }
 
-/* .courses_cards .card:not(:nth-child()){
-    background: var( --light-gray);
-    margin-left: 2.1rem;
-} */
 .courses_cards .card_image{
     margin: 2.3rem 2.1rem 1.7rem;
 }
@@ -51,15 +47,13 @@
 .courses_cards .card-body {
     padding: 0;
 }
-.courses_cards p{
+.courses_cards p.card-body-text {
     font-size: 1.8rem;
-    line-height: 2.1rem;
+    line-height: 2.2rem;
     font-weight: 700;
-}
-.courses_cards .card-body-text{
     padding: 0 2.1rem 3.5rem;
-
 }
+
 .courses_cards .hour,
 .courses_cards .fees{
     display: flex;
@@ -82,10 +76,43 @@
 }
 .courses_cards .hour p,
 .courses_cards .fees p{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
     color: var( --light-black);
     font-weight: 400;
 }
 .courses_cards .btn_box_wrapper .btn_box{
     display: block;
     text-align: center;
+}
+
+@media(max-width: 767.98px) {
+    .courses_cards .row {
+        margin-top: -5.2rem;
+        margin-left: -2.4rem;
+        margin-right: -2.4rem;
+    }
+    .courses_cards .row>* {
+        padding-top: 5.2rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+    .courses_cards p.card-body-text {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding: 0 2.1rem 2.4rem;
+    }
+    .courses_cards .hour p,
+    .courses_cards .fees p{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    .courses_cards .hour img, .courses_cards .fees img {
+        width: 1.5rem;
+        height: 2.0rem;
+        margin-right: 1.7rem;
+    }
+    .courses_cards .fees {
+        padding-bottom: 2.8rem;
+    }
 }
