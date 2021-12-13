@@ -52,4 +52,68 @@
 }
 .Knowledge_video iframe{
     width: 100%;
+    min-height: 45rem;
 }
+
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .knowledge_details .career_heading {
+        width: 100%;
+        text-align: center;
+    }    
+    .knowledge_details .career_heading h2{
+        display: inline;
+    }
+    .knowledge_details .career_heading h2 {
+        font-size: 4rem;
+    }
+    .knowledge_details .career_body_text {
+        width: 100%;
+        margin-top: 2.2rem;
+        margin-bottom: 5rem;
+    }
+    .Knowledge_video {
+        width: 100%;
+        margin-top: 6.9rem;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    .knowledge_details .career_body_text{
+        width: 100%;
+
+    }
+    .knowledge_details .career_heading h2 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    .sc_color_title {
+        font-size: 3.5rem;
+        line-height: 3.7rem;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hero_banner .hero_title {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .knowledge_details .career_heading h2 {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    .knowledge_details .career_body_text p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .Knowledge_video iframe {
+        width: 100%;
+        min-height: 35rem;
+    }
+
+}
+
