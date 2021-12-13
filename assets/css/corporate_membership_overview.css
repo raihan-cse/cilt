@@ -115,3 +115,44 @@
     font-weight: 400;
     padding: 8.5rem 5rem ;
 }
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hero_banner .hero_title {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .cmo_details .cmo_heading_text h3 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .cmo_bottopm_text .Professionals_comments p {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .cmo_details .cmo_heading_text h3 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .cmo_details {
+        margin-bottom: 2rem;
+    }
+    .cmo_details .cmo_heading_text {
+        padding: 5.6rem 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .cmo_cote_text .comments_content .wl_blue_image {
+        width: 100%;
+        padding: 3rem 1rem;
+    }
+    .cmo_bottopm_text .Professionals_comments p {
+        padding: 4.5rem 1rem;
+    }
+    
+}

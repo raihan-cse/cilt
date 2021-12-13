@@ -1,6 +1,5 @@
 @import "common.css";
 @import "header.css";
-/* @import "our-partners.css"; */
 @import "footer.css";
 
 
@@ -14,7 +13,6 @@
     width: 108.4rem;
     margin: 0 auto;
 }
-
 
 .career_details .career_heading h2{
     position: relative;
@@ -49,10 +47,7 @@
     line-height: 3.4rem;
 
 }
-/* 
-.career_details .career_body_footer{
-    margin-bottom: 7rem;
-} */
+
 .career_details .career_body_footer h3{
     text-align: center;
     font-size: 4rem;
@@ -65,6 +60,7 @@
 }
 .career_cards .career_b_cards{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2.4rem;
@@ -95,4 +91,100 @@
     font-size: 1.8rem;
     line-height: 2.1rem;
     font-weight: 400;
+}
+
+@media (max-width: 1199.98px) {
+    .hero_banner .hero_title {
+        font-size: 9rem;
+        line-height: 9.7rem;
+        font-weight: 700;
+    }
+    .career_details .career_heading h2 {
+        font-size: 4rem;
+        line-height: 3.8rem;
+    }
+    .career_details .career_body_footer h3 {
+        font-size: 3.5rem;
+        line-height: 3.7rem;
+    }
+    .career_cards .blue_card {
+        width: 45.9rem;
+        padding-top: 4.1rem;
+        padding-bottom: 4.2rem;
+        padding-left: 5.4rem;
+    }
+    .career_cards .blue_card .b_card_heading h3 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .btn_box {
+        padding: 1.6rem 2rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero_banner .hero_title {
+        font-size: 8rem;
+        line-height: 7.7rem;
+    }
+    .career_details .career_heading h2 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    .career_details .career_body_text p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .hero_banner .hero_title {
+        font-size: 7.5rem;
+        line-height: 7.5rem;
+    }
+    .career_details .career_body_footer h3 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+    .career_cards .blue_card .b_card_heading h3 {
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+    }
+    .career_cards .blue_card .b_card_text p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .hero_banner .hero_title {
+        font-size: 6rem;
+        line-height: 6.7rem;
+    }
+    .career_details .career_heading h2 {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+    .career_details .career_body_text p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .career_details .career_body_footer h3 {
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+    }
+    .career_cards .blue_card .b_card_heading h3 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .career_cards .blue_card .b_card_heading {
+        padding-bottom: 2.2rem;
+    }
+    .btn_box {
+        padding: 1.2rem 1.5rem;
+    }
 }
