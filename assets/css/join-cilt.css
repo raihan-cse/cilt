@@ -187,17 +187,22 @@ body {
 }
 
 .file_label {
-    font-style   : italic;
-    font-weight  : normal;
-    font-size    : 1.6rem;
-    line-height  : 1.9rem;
-    color        : #717171;
-    margin-top   : .9rem;
+    font-style      : italic;
+    font-weight     : normal;
+    font-size       : 1.6rem;
+    line-height     : 1.9rem;
+    color           : #717171;
+    margin-top      : .9rem;
     /* margin-bottom: 3rem; */
 }
 
 .file_label span {
     color: #FF0000;
+}
+
+.activeInput {
+    background-color: #361063;
+    color           : white;
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */

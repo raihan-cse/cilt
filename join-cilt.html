@@ -777,7 +777,8 @@
                                 id="row_edit_ac100">
                                 <div class="row align-items-center">
                                     <div class="col-11">
-                                        <input type="file" onchange="acCertTickShow(100)" class="form-control" id="ac"
+                                        <input type="file" onchange="acCertTickShow(100)"
+                                            class="form-control acCertInput100" id="ac"
                                             placeholder="Academic Certificates">
                                         <p class="file_label"><span>*</span> Upload Academic Certificates </p>
                                     </div>
@@ -796,7 +797,8 @@
                                 id="row_edit5">
                                 <div class="row align-items-center">
                                     <div class="col-11">
-                                        <input type="file" onchange="tickShowExCert(5)" class="form-control" id="ec"
+                                        <input type="file" onchange="tickShowExCert(5)"
+                                            class="form-control exCertInput5" id="ec"
                                             placeholder="Experience Certificate">
                                         <p class="file_label"><span>*</span> Upload Experience Certificate </p>
 
@@ -1027,6 +1029,10 @@
 
         function acCertTickShow(id) {
             $(`.tickImg${id}`).removeClass('d-none');
+            $(`.acCertInput${id}`).css({
+                'background-color': '#361063',
+                'color': 'white',
+            });
 
             $row_track_id = $('.acCertificate:last-child').data('row_track_ac');
             if ($row_track_id == null) {
@@ -1038,12 +1044,12 @@
             // console.log()
 
 
-            $('.acCertificateBox').append(
+            $('.acCertificateBox').prepend(
                 `
                         <div class="col-12 col-md-6 col-lg-4 acCertificate mb-5" data-row_track_ac="${$row_track_id}" id="row_edit_ac${$row_track_id}">
                                 <div class="row align-items-center">
                                     <div class="col-11">
-                                        <input type="file" onchange="acCertTickShow(${$row_track_id})" class="form-control" id="ac${$row_track_id}s"
+                                        <input type="file" onchange="acCertTickShow(${$row_track_id})" class="form-control acCertInput${$row_track_id}" id="ac${$row_track_id}s"
                                             placeholder="Academic Certificates">
                                         <div class="d-flex justify-content-between">
                                             <p class="file_label"><span>*</span> Upload Academic Certificates </p>
@@ -1063,6 +1069,10 @@
 
         function tickShowExCert(id) {
             $(`.tickImg${id}`).removeClass('d-none');
+            $(`.exCertInput${id}`).css({
+                'background-color': '#361063',
+                'color': 'white',
+            });
 
 
             $row_track_id = $('.uploadExCert:last-child').data('row_track_ex');
@@ -1072,11 +1082,11 @@
                 $row_track_id = $row_track_id + 1;
             }
 
-            $('.expCertBox').append(`
+            $('.expCertBox').prepend(`
                         <div class="col-12 col-md-6 col-lg-4 uploadExCert mb-5" data-row_track_ex="${$row_track_id}" id="row_edit2${$row_track_id}">
                                 <div class="row align-items-center">
                                     <div class="col-11">
-                                        <input type="file" onchange="tickShowExCert('${$row_track_id}')" class="form-control"
+                                        <input type="file" onchange="tickShowExCert('${$row_track_id}')" class="form-control exCertInput${$row_track_id}"
                                             id="ec${$row_track_id}" placeholder="Experience Certificate">
                                         <div class="d-flex justify-content-between"s>
                                             <p class="file_label"><span>*</span> Upload Experience Certificate </p>
