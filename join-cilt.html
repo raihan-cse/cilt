@@ -699,7 +699,7 @@
 
                 <h2 class="sc_color_title">EMPLOYMENT HISTORY</h2>
                 <div class="emplHisContainer">
-                    <div class="row g-5 groupFrom2">
+                    <div class="row g-5 groupFrom2 employeTable">
                         <div class="col-12">
                             <h1 class="subFtitle">Duration</h1>
                         </div>
@@ -762,37 +762,54 @@
                     <div class="col-12">
                         <div class="row align-items-center">
                             <div class="col-11 col-md-4">
-                                <input type="file" onchange="tickShow(1)" class="form-control" id="cv" placeholder="CV">
+                                <input type="file" onchange="tickShow('cv')" class="form-control" id="cv"
+                                    placeholder="CV">
+                                <p class="file_label"><span>*</span> Upload CV</p>
                             </div>
-                            <div class="col-1 tickImg1 d-none">
+                            <div class="col-1 tickImgcv d-none">
                                 <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="row align-items-center">
-                            <div class="col-11 col-md-4">
-                                <input type="file" onchange="tickShow(2)" class="form-control" id="ac"
-                                    placeholder="Academic Certificates">
-                            </div>
-                            <div class="col-1 tickImg2 d-none">
-                                <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
+                        <div class="row acCertificateBox">
+                            <div class="col-12 acCertificate mb-5" data-row_track_ac="100" id="row_edit_ac100">
+                                <div class="row align-items-center">
+                                    <div class="col-11 col-md-4">
+                                        <input type="file" onchange="acCertTickShow(2)" class="form-control" id="ac"
+                                            placeholder="Academic Certificates">
+                                        <p class="file_label"><span>*</span> Upload Academic Certificates </p>
+                                    </div>
+                                    <div class="col-1 tickImg100 d-none">
+                                        <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12">
-                        <div class="row align-items-center">
-                            <div class="col-11 col-md-4">
-                                <input type="file" onchange="tickShow(3)" class="form-control" id="ec"
-                                    placeholder="Experience Certificate">
-                            </div>
-                            <div class="col-1 tickImg3 d-none">
-                                <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
+
+                        <div class="row expCertBox">
+                            <div class="col-12 uploadExCert mb-5" data-row_track_ex="5" id="row_edit5">
+                                <div class="row align-items-center">
+                                    <div class="col-11 col-md-4">
+                                        <input type="file" onchange="tickShowExCert(5)" class="form-control" id="ec"
+                                            placeholder="Experience Certificate">
+                                        <p class="file_label"><span>*</span> Upload Experience Certificate </p>
+
+                                    </div>
+                                    <div class="col-1 tickImg5 d-none">
+                                        <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                </div>
 
+                <div class="row">
                     <div class="col-12">
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="agreePolicy" value="option1">
@@ -955,7 +972,7 @@
 
         $('.addBtn').click(function () {
 
-            $row_track_id = $('.invoice-table tbody>tr:last').data('row_track');
+            $row_track_id = $('.employeTable:last-child').data('row_track');
             if ($row_track_id == null) {
                 $row_track_id = 1;
             } else {
@@ -1005,6 +1022,73 @@
         function tickShow(id) {
             $(`.tickImg${id}`).removeClass('d-none');
         }
+
+        function acCertTickShow(id) {
+            $(`.tickImg${id}`).removeClass('d-none');
+
+            $row_track_id = $('.acCertificate:last-child').data('row_track_ac');
+            if ($row_track_id == null) {
+                $row_track_id = 1;
+            } else {
+                $row_track_id = $row_track_id + 1;
+            }
+
+            // console.log()
+
+
+            $('.acCertificateBox').append(
+                `
+                        <div class="col-12 acCertificate mb-5" data-row_track_ac="${$row_track_id}" id="row_edit_ac${$row_track_id}">
+                                <div class="row align-items-center">
+                                    <div class="col-11 col-md-4">
+                                        <input type="file" onchange="acCertTickShow(${$row_track_id})" class="form-control" id="ac${$row_track_id}s"
+                                            placeholder="Academic Certificates">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="file_label"><span>*</span> Upload Academic Certificates </p>
+                                            <p class="file_label" type="button" onclick="delete_row('row_edit_ac${$row_track_id}')">Delete </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-1 tickImg${$row_track_id} d-none">
+                                        <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                `
+            )
+        }
+
+
+        function tickShowExCert(id) {
+            $(`.tickImg${id}`).removeClass('d-none');
+
+
+            $row_track_id = $('.uploadExCert:last-child').data('row_track_ex');
+            if ($row_track_id == null) {
+                $row_track_id = 1;
+            } else {
+                $row_track_id = $row_track_id + 1;
+            }
+
+            $('.expCertBox').append(`
+                        <div class="col-12 uploadExCert mb-5" data-row_track_ex="${$row_track_id}" id="row_edit2${$row_track_id}">
+                                <div class="row align-items-center">
+                                    <div class="col-11 col-md-4">
+                                        <input type="file" onchange="tickShowExCert('${$row_track_id}')" class="form-control"
+                                            id="ec${$row_track_id}" placeholder="Experience Certificate">
+                                        <div class="d-flex justify-content-between"s>
+                                            <p class="file_label"><span>*</span> Upload Experience Certificate </p>
+                                            <p class="file_label" type="button" onclick="delete_row('row_edit2${$row_track_id}')">Delete </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 tickImg${$row_track_id} d-none">
+                                        <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+            `);
+        }
+
 
     </script>
 </body>
