@@ -762,7 +762,7 @@
                     <div class="col-11">
                         <div class="row align-items-center">
                             <div class="col-11 col-md-4">
-                                <input type="file" onchange="tickShow('cv')" class="form-control" id="cv"
+                                <input type="file" onchange="tickShow('cv')" class="form-control cvInput" id="cv"
                                     placeholder="CV">
                                 <p class="file_label"><span>*</span> Upload CV</p>
                             </div>
@@ -1080,6 +1080,13 @@
 
         function tickShow(id) {
             $(`.tickImg${id}`).removeClass('d-none');
+
+            $('.cvInput').css({
+                'background-color': '#361063',
+                'color': 'white',
+            })
+
+
         }
 
         function acCertTickShow(id) {
