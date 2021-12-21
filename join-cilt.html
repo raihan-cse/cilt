@@ -780,7 +780,14 @@
                                         <input type="file" onchange="acCertTickShow(1000)"
                                             class="form-control acCertInput1000" id="ac"
                                             placeholder="Academic Certificates">
-                                        <p class="file_label"><span>*</span> Upload Academic Certificates </p>
+
+                                        <div class="d-flex justify-content-between">
+                                            <p class="file_label"><span>*</span> Upload Academic Certificates </p>
+
+                                            <p class="file_label ac_file_label" type="button"
+                                                onclick="delete_row_acCert('row_edit_ac1000')">
+                                                Delete </p>
+                                        </div>
                                     </div>
                                     <div class="col-1 tickImg1000 d-none">
                                         <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
@@ -791,7 +798,6 @@
                     </div>
 
                     <div class="col-12">
-
                         <div class="row expCertBox">
                             <div class="col-12 col-md-6 col-lg-4 uploadExCert mb-5" data-row_track_ex="5"
                                 id="row_edit5">
@@ -800,8 +806,12 @@
                                         <input type="file" onchange="tickShowExCert(5)"
                                             class="form-control exCertInput5" id="ec"
                                             placeholder="Experience Certificate">
-                                        <p class="file_label"><span>*</span> Upload Experience Certificate </p>
-
+                                        <div class="d-flex justify-content-between" s>
+                                            <p class="file_label"><span>*</span> Upload Experience Certificate </p>
+                                            <p class="file_label file_label_ex" type="button"
+                                                onclick="delete_row_ex('row_edit5')">
+                                                Delete </p>
+                                        </div>
                                     </div>
                                     <div class="col-1 tickImg5 d-none">
                                         <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
@@ -1023,12 +1033,58 @@
             $(`#${rowno}`).remove();
         }
 
+
+        function delete_row_acCert(rowno) {
+            if ($(`.acCertificate`).length == 1) {
+                $('.ac_file_label').addClass('d-none');
+            }
+            else {
+                $('.ac_file_label').removeClass('d-none');
+                $(`#${rowno}`).remove();
+
+                if ($(`.acCertificate`).length == 1) {
+                    $('.ac_file_label').addClass('d-none');
+                }
+            }
+
+        }
+        if ($(`.acCertificate`).length == 1) {
+            $('.ac_file_label').addClass('d-none');
+        } else {
+            $('.ac_file_label').removeClass('d-none');
+        }
+
+
+        function delete_row_ex(rowno) {
+            if ($(`.uploadExCert`).length == 1) {
+                $('.file_label_ex').addClass('d-none');
+            }
+            else {
+                $('.file_label_ex').removeClass('d-none');
+                $(`#${rowno}`).remove();
+
+                if ($(`.uploadExCert`).length == 1) {
+                    $('.file_label_ex').addClass('d-none');
+                }
+            }
+
+        }
+        if ($(`.uploadExCert`).length == 1) {
+            $('.file_label_ex').addClass('d-none');
+        } else {
+            $('.file_label_ex').removeClass('d-none');
+        }
+
+
+
+
         function tickShow(id) {
             $(`.tickImg${id}`).removeClass('d-none');
         }
 
         function acCertTickShow(id) {
             $(`.tickImg${id}`).removeClass('d-none');
+
 
 
 
@@ -1058,7 +1114,7 @@
                                             placeholder="Academic Certificates">
                                         <div class="d-flex justify-content-between">
                                             <p class="file_label"><span>*</span> Upload Academic Certificates </p>
-                                            <p class="file_label" type="button" onclick="delete_row('row_edit_ac${$row_track_id_ac}')">Delete </p>
+                                            <p class="file_label ac_file_label" type="button" onclick="delete_row_acCert('row_edit_ac${$row_track_id_ac}')">Delete </p>
                                         </div>
 
                                     </div>
@@ -1075,6 +1131,11 @@
 
             $(`.acCertInput${id}`).addClass('activeInput');
 
+            if ($(`.acCertificate`).length == 1) {
+                $('.ac_file_label').addClass('d-none');
+            } else {
+                $('.ac_file_label').removeClass('d-none');
+            }
 
 
         }
@@ -1109,7 +1170,7 @@
                                             id="ec${$row_track_id_ec}" placeholder="Experience Certificate">
                                         <div class="d-flex justify-content-between"s>
                                             <p class="file_label"><span>*</span> Upload Experience Certificate </p>
-                                            <p class="file_label" type="button" onclick="delete_row('row_edit2${$row_track_id_ec}')">Delete </p>
+                                            <p class="file_label file_label_ex" type="button" onclick="delete_row_ex('row_edit2${$row_track_id_ec}')">Delete </p>
                                         </div>
                                     </div>
                                     <div class="col-1 tickImg${$row_track_id_ec} d-none">
@@ -1122,6 +1183,12 @@
 
 
             $(`.exCertInput${id}`).addClass('activeInput')
+
+            if ($(`.uploadExCert`).length == 1) {
+                $('.file_label_ex').addClass('d-none');
+            } else {
+                $('.file_label_ex').removeClass('d-none');
+            }
 
         }
 
