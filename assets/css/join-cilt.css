@@ -200,10 +200,10 @@ body {
     color: #FF0000;
 }
 
-.activeInput {
+/* .activeInput {
     background-color: #361063;
     color           : white;
-}
+} */
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {

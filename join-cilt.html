@@ -773,16 +773,16 @@
                     </div>
                     <div class="col-12">
                         <div class="row acCertificateBox">
-                            <div class="col-12 col-md-6 col-lg-4 acCertificate mb-5" data-row_track_ac="100"
-                                id="row_edit_ac100">
+                            <div class="col-12 col-md-6 col-lg-4 acCertificate mb-5" data-row_track_ac="1000"
+                                id="row_edit_ac1000">
                                 <div class="row align-items-center">
                                     <div class="col-11">
-                                        <input type="file" onchange="acCertTickShow(100)"
-                                            class="form-control acCertInput100" id="ac"
+                                        <input type="file" onchange="acCertTickShow(1000)"
+                                            class="form-control acCertInput1000" id="ac"
                                             placeholder="Academic Certificates">
                                         <p class="file_label"><span>*</span> Upload Academic Certificates </p>
                                     </div>
-                                    <div class="col-1 tickImg100 d-none">
+                                    <div class="col-1 tickImg1000 d-none">
                                         <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
                                     </div>
                                 </div>
@@ -1029,76 +1029,101 @@
 
         function acCertTickShow(id) {
             $(`.tickImg${id}`).removeClass('d-none');
-            $(`.acCertInput${id}`).css({
-                'background-color': '#361063',
-                'color': 'white',
-            });
-
-            $row_track_id = $('.acCertificate:last-child').data('row_track_ac');
-            if ($row_track_id == null) {
-                $row_track_id = 1;
-            } else {
-                $row_track_id = $row_track_id + 1;
-            }
-
-            // console.log()
 
 
-            $('.acCertificateBox').prepend(
-                `
-                        <div class="col-12 col-md-6 col-lg-4 acCertificate mb-5" data-row_track_ac="${$row_track_id}" id="row_edit_ac${$row_track_id}">
+
+            console.log(id)
+
+
+            if ($(`.acCertInput${id}`).hasClass('activeInput') !== true) {
+
+                $(`.acCertInput${id}`).css({
+                    'background-color': '#361063',
+                    'color': 'white',
+                });
+
+                $row_track_id_ac = $('.acCertificate:first-child').data('row_track_ac');
+                if ($row_track_id_ac == null) {
+                    $row_track_id_ac = 1;
+                } else {
+                    $row_track_id_ac = $row_track_id_ac + 1;
+                }
+
+
+                $('.acCertificateBox').prepend(
+                    `
+                        <div class="col-12 col-md-6 col-lg-4 acCertificate mb-5" data-row_track_ac="${$row_track_id_ac}" id="row_edit_ac${$row_track_id_ac}">
                                 <div class="row align-items-center">
                                     <div class="col-11">
-                                        <input type="file" onchange="acCertTickShow(${$row_track_id})" class="form-control acCertInput${$row_track_id}" id="ac${$row_track_id}s"
+                                        <input type="file" onchange="acCertTickShow(${$row_track_id_ac})" class="form-control acCertInput${$row_track_id_ac}" id="ac${$row_track_id_ac}"
                                             placeholder="Academic Certificates">
                                         <div class="d-flex justify-content-between">
                                             <p class="file_label"><span>*</span> Upload Academic Certificates </p>
-                                            <p class="file_label" type="button" onclick="delete_row('row_edit_ac${$row_track_id}')">Delete </p>
+                                            <p class="file_label" type="button" onclick="delete_row('row_edit_ac${$row_track_id_ac}')">Delete </p>
                                         </div>
 
                                     </div>
-                                    <div class="col-1 tickImg${$row_track_id} d-none">
+                                    <div class="col-1 tickImg${$row_track_id_ac} d-none">
                                         <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
                                     </div>
                                 </div>
                             </div>
                 `
-            )
+                )
+
+            }
+
+
+            $(`.acCertInput${id}`).addClass('activeInput');
+
+
+
         }
 
 
         function tickShowExCert(id) {
             $(`.tickImg${id}`).removeClass('d-none');
-            $(`.exCertInput${id}`).css({
-                'background-color': '#361063',
-                'color': 'white',
-            });
 
 
-            $row_track_id = $('.uploadExCert:last-child').data('row_track_ex');
-            if ($row_track_id == null) {
-                $row_track_id = 1;
-            } else {
-                $row_track_id = $row_track_id + 1;
-            }
 
-            $('.expCertBox').prepend(`
-                        <div class="col-12 col-md-6 col-lg-4 uploadExCert mb-5" data-row_track_ex="${$row_track_id}" id="row_edit2${$row_track_id}">
+
+            if ($(`.exCertInput${id}`).hasClass('activeInput') !== true) {
+
+                $(`.exCertInput${id}`).css({
+                    'background-color': '#361063',
+                    'color': 'white',
+                });
+
+
+                $row_track_id_ec = $('.uploadExCert:first-child').data('row_track_ex');
+                if ($row_track_id_ec == null) {
+                    $row_track_id_ec = 1;
+                } else {
+                    $row_track_id_ec = $row_track_id_ec + 1;
+                }
+
+                $('.expCertBox').prepend(`
+                        <div class="col-12 col-md-6 col-lg-4 uploadExCert mb-5" data-row_track_ex="${$row_track_id_ec}" id="row_edit2${$row_track_id_ec}">
                                 <div class="row align-items-center">
                                     <div class="col-11">
-                                        <input type="file" onchange="tickShowExCert('${$row_track_id}')" class="form-control exCertInput${$row_track_id}"
-                                            id="ec${$row_track_id}" placeholder="Experience Certificate">
+                                        <input type="file" onchange="tickShowExCert('${$row_track_id_ec}')" class="form-control exCertInput${$row_track_id_ec}"
+                                            id="ec${$row_track_id_ec}" placeholder="Experience Certificate">
                                         <div class="d-flex justify-content-between"s>
                                             <p class="file_label"><span>*</span> Upload Experience Certificate </p>
-                                            <p class="file_label" type="button" onclick="delete_row('row_edit2${$row_track_id}')">Delete </p>
+                                            <p class="file_label" type="button" onclick="delete_row('row_edit2${$row_track_id_ec}')">Delete </p>
                                         </div>
                                     </div>
-                                    <div class="col-1 tickImg${$row_track_id} d-none">
+                                    <div class="col-1 tickImg${$row_track_id_ec} d-none">
                                         <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
                                     </div>
                                 </div>
                             </div>
             `);
+            }
+
+
+            $(`.exCertInput${id}`).addClass('activeInput')
+
         }
 
 
