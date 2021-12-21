@@ -1032,10 +1032,9 @@
 
 
 
-            console.log(id)
 
 
-            if ($(`.acCertInput${id}`).hasClass('activeInput') !== true) {
+            if ($(`.acCertInput${id}`).hasClass('activeInput') !== true || $(`.acCertificate`).length == 1) {
 
                 $(`.acCertInput${id}`).css({
                     'background-color': '#361063',
@@ -1087,7 +1086,7 @@
 
 
 
-            if ($(`.exCertInput${id}`).hasClass('activeInput') !== true) {
+            if ($(`.exCertInput${id}`).hasClass('activeInput') !== true || $(`.uploadExCert`).length == 1) {
 
                 $(`.exCertInput${id}`).css({
                     'background-color': '#361063',
