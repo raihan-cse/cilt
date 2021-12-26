@@ -20,11 +20,10 @@
     justify-content: center;
 }
 
-.st_section .content_wrapper img {
+/* .st_section .content_wrapper img {
     width : 4rem;
     height: 4rem;
-    /* not usable */
-}
+} */
 
 .st_section .content_wrapper p {
     font-size  : 2.4rem;
@@ -63,15 +62,28 @@
 }
 
 /* ==forum & transport== */
+.forum_transport_content_left, .forum_transport_content_right {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.forum_transport_content_left {
+    background-image: url(../images/home/young-professional-forum.png);
+}
+.forum_transport_content_right {
+    background-image: url(../images/home/women-inlogistice-transport.png);
+}
 .forum_transport_content {
     background: var(--light-gray);
     padding   : 11.5rem 8.2rem;
+    opacity: 0.95;
+    
+    
 }
 
 .forum_transport_content .icon img {
-    width : 5rem;
-    height: 5rem;
-    /* not usable */
+    width : 4rem;
+    height: 4rem;
 }
 
 .forum_transport_content h3 {
