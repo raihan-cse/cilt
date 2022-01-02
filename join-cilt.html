@@ -638,7 +638,7 @@
                         <input type="text" class="form-control" id="certificateName">
                     </div>
                     <div class="col-md-6 bp">
-                        <label for="Email" class="form-label">Email <span>*</span></label>
+                        <label for="Email" class="form-label">Email (Personal) <span>*</span></label>
                         <input type="email" class="form-control" id="Email">
                     </div>
                     <div class="col-md-4 bp">
@@ -668,12 +668,13 @@
                     </div>
                 </div>
 
-                <h2 class="sc_color_title">CURRENT JOB DETAILS</h2>
                 <div class="row g-5 groupFrom">
-
                     <div class="col-12">
-                        <h1 class="subFtitle">Duration</h1>
+                        <h2 class="sc_color_title">CURRENT JOB DETAILS</h2>
                     </div>
+                    <!-- <div class="col-12">
+                        <h1 class="subFtitle">Duration</h1>
+                    </div> -->
                     <div class="col-md-4 bp">
                         <label for="fromDate" class="form-label">From <span>*</span></label>
                         <input type="date" class="form-control" id="fromDate">
@@ -686,22 +687,25 @@
                         <label for="Designation" class="form-label">Designation <span>*</span></label>
                         <input type="text" class="form-control" id="Designation">
                     </div>
-                    <div class="col-md-4 bp">
+                    <div class="col-12 bp">
                         <label for="Organization" class="form-label">Organization <span>*</span></label>
                         <input type="text" class="form-control" id="Organization">
                     </div>
-                    <div class="col-md-8 bp">
-                        <label for="keyRes" class="form-label">Key Responsibilities <span>*</span></label>
-                        <input type="text" class="form-control" id="keyRes">
+                    <div class="col-12 bp">
+                        <label for="respon" class="form-label">Key Responsibilities <span>*</span></label>
+                        <textarea class="form-control" name="offAddress" id="respon" cols="30" rows="2"></textarea>
+
                     </div>
 
                 </div>
 
-                <h2 class="sc_color_title">EMPLOYMENT HISTORY</h2>
                 <div class="emplHisContainer">
                     <div class="row g-5 groupFrom2 employeTable">
-                        <div class="col-12">
+                        <!-- <div class="col-12">
                             <h1 class="subFtitle">Duration</h1>
+                        </div> -->
+                        <div class="col-12">
+                            <h2 class="sc_color_title">EMPLOYMENT HISTORY</h2>
                         </div>
 
                         <div class="col-md-4 bp">
@@ -716,13 +720,13 @@
                             <label for="Designation" class="form-label">Designation <span>*</span></label>
                             <input type="text" class="form-control" id="Designation">
                         </div>
-                        <div class="col-md-4 bp">
+                        <div class="col-12 bp">
                             <label for="Organization" class="form-label">Organization <span>*</span></label>
                             <input type="text" class="form-control" id="Organization">
                         </div>
-                        <div class="col-md-8 bp">
+                        <div class="col-12 bp">
                             <label for="keyRes" class="form-label">Key Responsibilities <span>*</span></label>
-                            <input type="text" class="form-control" id="keyRes">
+                            <textarea class="form-control" name="offAddress" id="keyRes" cols="30" rows="2"></textarea>
                         </div>
 
                     </div>
@@ -733,11 +737,33 @@
                     </div>
                 </div>
 
-                <h2 class="sc_color_title">Education</h2>
                 <div class="row g-5 groupFrom">
+                    <div class="col-12">
+                        <h2 class="sc_color_title">Additional Information</h2>
+                    </div>
                     <div class="col-12 bp">
-                        <label for="addiInfo" class="form-label">Additional Information</label>
+                        <label for="addiInfo" class="form-label">Education</label>
                         <textarea class="form-control" name="addiInfo" id="addiInfo" cols="30" rows="9"></textarea>
+                        <span class="textAreaMsg">30000 words</span>
+                    </div>
+                    <div class="col-12 bp">
+                        <label for="profAff" class="form-label">Professional Affiliation</label>
+                        <textarea class="form-control" name="addiInfo" id="profAff" cols="30" rows="9"></textarea>
+                        <span class="textAreaMsg">30000 words</span>
+                    </div>
+                    <div class="col-12 bp">
+                        <label for="extraAct" class="form-label">Extra Curricular Activities</label>
+                        <textarea class="form-control" name="addiInfo" id="extraAct" cols="30" rows="9"></textarea>
+                        <span class="textAreaMsg">30000 words</span>
+                    </div>
+                    <div class="col-12 bp">
+                        <label for="contSec" class="form-label">Contribution to Logistics sector</label>
+                        <textarea class="form-control" name="addiInfo" id="contSec" cols="30" rows="9"></textarea>
+                        <span class="textAreaMsg">30000 words</span>
+                    </div>
+                    <div class="col-12 bp">
+                        <label for="Bio" class="form-label">Bio</label>
+                        <textarea class="form-control" name="addiInfo" id="Bio" cols="30" rows="9"></textarea>
                         <span class="textAreaMsg">30000 words</span>
                     </div>
                     <div class="col-12 bp">
@@ -759,6 +785,30 @@
                 <h2 class="sc_color_title">Upload documents</h2>
                 <div class="row g-5 groupFrom">
 
+                    <div class="col-11">
+                        <div class="row align-items-center">
+                            <div class="col-11 col-md-4">
+                                <input type="file" onchange="tickShow('pic')" class="form-control picInput" id="cv"
+                                    placeholder="Upload Picture">
+                                <p class="file_label"><span>*</span>Upload Picture</p>
+                            </div>
+                            <div class="col-1 tickImgpic d-none">
+                                <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="row align-items-center">
+                            <div class="col-11 col-md-4">
+                                <input type="file" onchange="tickShow('nid')" class="form-control nidInput" id="nid"
+                                    placeholder="Upload NID/Passport">
+                                <p class="file_label"><span>*</span>Upload NID/Passport</p>
+                            </div>
+                            <div class="col-1 tickImgnid d-none">
+                                <img class="fileTick " src="assets/images/icons/tick.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-11">
                         <div class="row align-items-center">
                             <div class="col-11 col-md-4">
@@ -997,9 +1047,7 @@
 
                 `
                 <div class="row g-5 groupFrom2" data-row_track="${$row_track_id}" id="row_edit${$row_track_id}">
-                        <div class="col-8">
-                            <h1 class="subFtitle">Duration</h1>
-                        </div>
+                       
                         <div class="col-4 text-end">
                             <button type="button" class="addEmplyBtn" onclick="delete_row('row_edit${$row_track_id}')">Delete </button>
                         </div>
@@ -1081,11 +1129,10 @@
         function tickShow(id) {
             $(`.tickImg${id}`).removeClass('d-none');
 
-            $('.cvInput').css({
+            $(`.${id}Input`).css({
                 'background-color': '#361063',
                 'color': 'white',
             })
-
 
         }
 
