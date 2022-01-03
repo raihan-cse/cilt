@@ -120,6 +120,9 @@ body {
     border          : none;
     margin-bottom   : 8rem;
 }
+.addEmplyBtn.delete {
+    margin-bottom   : 2rem;
+} 
 
 .textAreaMsg {
     text-align : end;
